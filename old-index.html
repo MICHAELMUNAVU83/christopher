@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>
+      Christopher Msando Foundation | Empowering Communities in Kenya
+    </title>
+    <meta
+      name="description"
+      content="Christopher Msando Foundation nurtures talent, promotes sports, empowers communities and advances sustainable self-reliance in Kenya."
+    />
+    <meta name="theme-color" content="#12324d" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://christophermsandofoundation.org/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Christopher Msando Foundation | Opportunity. Dignity. Self-reliance."
+    />
+    <meta
+      property="og:description"
+      content="Nurturing talent, strengthening communities and creating pathways to lasting self-reliance."
+    />
+    <meta
+      property="og:url"
+      content="https://christophermsandofoundation.org/"
+    />
+    <meta
+      property="og:image"
+      content="https://christophermsandofoundation.org/images/illustrations/community-hero.webp"
+    />
+    <meta
+      property="og:image:alt"
+      content="Illustration of African young people learning, playing sport and caring for their community"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="images/logobg.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#102f47",
+              sky: "#3c91cd",
+              clay: "#bf633d",
+              sun: "#e9b44c",
+              paper: "#fbf5e8",
+              leaf: "#58745c",
+            },
+            fontFamily: {
+              sans: ["DM Sans", "sans-serif"],
+              display: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background: #fffdf8;
+        color: #102f47;
+      }
+      main section {
+        scroll-margin-top: 5.5rem;
+      }
+      .paper {
+        background-color: #fbf5e8;
+        background-image: radial-gradient(
+          rgba(16, 47, 71, 0.045) 0.65px,
+          transparent 0.65px
+        );
+        background-size: 8px 8px;
+      }
+      .eyebrow {
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        font-size: 0.74rem;
+        font-weight: 700;
+        color: #bf633d;
+      }
+      .section-title {
+        font-family: Manrope, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.035em;
+        line-height: 1.08;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        padding: 0.9rem 1.35rem;
+        font-weight: 700;
+        transition: 0.2s;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: 0.7s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: none;
+      }
+      .nav-link {
+        position: relative;
+      }
+      .nav-link:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 100%;
+        bottom: -6px;
+        height: 2px;
+        background: #e9b44c;
+        transition: 0.2s;
+      }
+      .nav-link:hover:after {
+        right: 0;
+      }
+      .gallery-item:focus-visible,
+      .btn:focus-visible,
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible {
+        outline: 3px solid #e9b44c;
+        outline-offset: 3px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto !important;
+        }
+        .reveal {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        .btn:hover {
+          transform: none;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "NGO",
+        "name": "Christopher Msando Foundation",
+        "url": "https://christophermsandofoundation.org/",
+        "logo": "https://christophermsandofoundation.org/images/logo.png",
+        "email": "info@christophermsandofoundation.org",
+        "areaServed": "Kenya",
+        "description": "A Kenyan foundation nurturing talent, promoting sports, empowering communities and advancing sustainable self-reliance."
+      }
+    </script>
+  </head>
+  <body class="font-sans antialiased selection:bg-sun/40">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-white focus:px-5 focus:py-3"
+      >Skip to content</a
+    >
+    <header
+      class="sticky top-0 z-50 border-b border-ink/10 bg-[#fffdf8]/95 backdrop-blur"
+    >
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8"
+        aria-label="Main navigation"
+      >
+        <a href="#home" class="rounded-xl bg-white p-2 shadow-sm"
+          ><img
+            src="images/logo.png"
+            alt="Christopher Msando Foundation home"
+            class="h-9 w-auto"
+        /></a>
+        <button
+          id="menu-button"
+          class="rounded-lg border border-ink/20 p-2 lg:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open menu"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <div class="hidden items-center gap-6 text-sm font-semibold lg:flex">
+          <a class="nav-link" href="#home">Home</a
+          ><a class="nav-link" href="#about">About Us</a
+          ><a class="nav-link" href="#objectives">Our Objectives</a
+          ><a class="nav-link" href="#programmes">Programmes</a
+          ><a class="nav-link" href="#gallery">Gallery</a
+          ><a class="nav-link" href="#get-involved">Get Involved</a
+          ><a
+            class="btn bg-ink !px-5 !py-3 text-white hover:bg-sky"
+            href="#stay-in-touch"
+            >Stay in Touch</a
+          >
+        </div>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="hidden border-t border-ink/10 bg-white px-5 py-4 lg:hidden"
+      >
+        <div class="grid gap-1 font-semibold">
+          <a class="rounded-lg px-3 py-2 hover:bg-paper" href="#home">Home</a
+          ><a class="rounded-lg px-3 py-2 hover:bg-paper" href="#about"
+            >About Us</a
+          ><a class="rounded-lg px-3 py-2 hover:bg-paper" href="#objectives"
+            >Our Objectives</a
+          ><a class="rounded-lg px-3 py-2 hover:bg-paper" href="#programmes"
+            >Programmes</a
+          ><a class="rounded-lg px-3 py-2 hover:bg-paper" href="#gallery"
+            >Gallery</a
+          ><a class="rounded-lg px-3 py-2 hover:bg-paper" href="#get-involved"
+            >Get Involved</a
+          ><a
+            class="rounded-lg px-3 py-2 text-sky hover:bg-paper"
+            href="#stay-in-touch"
+            >Stay in Touch</a
+          >
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section id="home" class="paper overflow-hidden">
+        <div
+          class="mx-auto grid min-h-[760px] max-w-7xl items-center gap-8 px-5 py-16 lg:grid-cols-[.88fr_1.12fr] lg:px-8 lg:py-24"
+        >
+          <div class="relative z-10 reveal">
+            <p class="eyebrow">Christopher Msando Foundation</p>
+            <h1
+              class="section-title mt-5 max-w-2xl text-5xl sm:text-6xl lg:text-7xl"
+            >
+              Growing talent.<br /><span class="text-clay"
+                >Building futures.</span
+              >
+            </h1>
+            <p class="mt-7 max-w-xl text-lg leading-8 text-ink/70">
+              We create opportunities for children, young people and communities
+              to develop their talents, strengthen practical skills and shape a
+              more self-reliant future.
+            </p>
+            <div class="mt-9 flex flex-wrap gap-3">
+              <a class="btn bg-ink text-white hover:bg-sky" href="#about"
+                >Learn More About Us <span aria-hidden="true">→</span></a
+              ><a
+                class="btn border border-ink/20 bg-white hover:border-clay hover:text-clay"
+                href="#programmes"
+                >Explore Our Programmes</a
+              >
+            </div>
+            <div
+              class="mt-12 flex flex-wrap gap-x-8 gap-y-3 border-t border-ink/15 pt-6 text-sm font-semibold"
+            >
+              <span>Talent development</span><span>Sports & youth</span
+              ><span>Community self-reliance</span>
+            </div>
+          </div>
+          <div class="relative reveal">
+            <div
+              class="absolute -inset-8 rounded-full bg-sun/15 blur-3xl"
+            ></div>
+            <img
+              src="images/illustrations/community-hero.webp"
+              alt="Pencil illustration of African youth learning, playing football, mentoring and planting a tree"
+              class="relative w-full rounded-[2rem] object-cover shadow-2xl shadow-ink/10"
+              width="1800"
+              height="720"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="about" class="py-24 lg:py-32">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="grid gap-14 lg:grid-cols-[.8fr_1.2fr]">
+            <div class="reveal">
+              <p class="eyebrow">About Us</p>
+              <h2 class="section-title mt-4 text-4xl sm:text-5xl">
+                A legacy turned into opportunity.
+              </h2>
+              <p class="mt-6 text-lg leading-8 text-ink/65">
+                The Christopher Msando Foundation advances causes Christopher
+                believed in by opening pathways for young people and communities
+                to learn, create, lead and thrive.
+              </p>
+            </div>
+            <div class="grid gap-5 sm:grid-cols-2">
+              <article class="reveal rounded-3xl bg-ink p-8 text-white">
+                <span class="text-3xl text-sun">01</span>
+                <h3 class="mt-8 font-display text-2xl font-bold">Who We Are</h3>
+                <p class="mt-3 leading-7 text-white/70">
+                  A Kenyan foundation supporting children, youth and communities
+                  through skills, mentorship, talent development and practical
+                  opportunities.
+                </p>
+              </article>
+              <article class="reveal rounded-3xl bg-sky p-8 text-white">
+                <span class="text-3xl text-sun">02</span>
+                <h3 class="mt-8 font-display text-2xl font-bold">
+                  Our Mission
+                </h3>
+                <p class="mt-3 leading-7 text-white/80">
+                  To nurture potential, expand access to opportunity and equip
+                  people to build lives and communities of purpose and dignity.
+                </p>
+              </article>
+              <article class="reveal rounded-3xl bg-paper p-8">
+                <span class="text-3xl text-clay">03</span>
+                <h3 class="mt-8 font-display text-2xl font-bold">Our Vision</h3>
+                <p class="mt-3 leading-7 text-ink/65">
+                  Thriving communities where every young person can develop
+                  their abilities, participate fully and create a sustainable
+                  future.
+                </p>
+              </article>
+              <article
+                class="reveal rounded-3xl border border-ink/10 bg-white p-8"
+              >
+                <span class="text-3xl text-clay">04</span>
+                <h3 class="mt-8 font-display text-2xl font-bold">
+                  Who Was CM?
+                </h3>
+                <p class="mt-3 leading-7 text-ink/65">
+                  Christopher Msando was an ICT leader at Kenya’s IEBC,
+                  remembered for his resilience, honesty, decisiveness, empathy
+                  and attention to detail. The Foundation carries those values
+                  forward in his honour following his death on 28 July 2017.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="objectives" class="bg-ink py-24 text-white lg:py-32">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <p class="eyebrow !text-sun">Our Objectives</p>
+          <h2
+            class="section-title mt-5 max-w-5xl text-4xl sm:text-5xl lg:text-6xl"
+          >
+            To nurture talent and promote sports development, empower
+            individuals and communities, and advance sustainable initiatives
+            that strengthen skills, create opportunities and foster long-term
+            self-reliance.
+          </h2>
+          <div class="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="rounded-2xl border border-white/15 p-6">
+              <span class="text-4xl">✦</span>
+              <h3 class="mt-6 font-display text-xl font-bold">
+                Talent Development
+              </h3>
+              <p class="mt-2 text-white/60">
+                Discovering potential and creating room for it to grow.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-white/15 p-6">
+              <span class="text-4xl">◎</span>
+              <h3 class="mt-6 font-display text-xl font-bold">
+                Sports Development
+              </h3>
+              <p class="mt-2 text-white/60">
+                Building confidence, teamwork and healthy participation.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-white/15 p-6">
+              <span class="text-4xl">↗</span>
+              <h3 class="mt-6 font-display text-xl font-bold">Empowerment</h3>
+              <p class="mt-2 text-white/60">
+                Connecting people with skills, mentorship and opportunity.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-white/15 p-6">
+              <span class="text-4xl">⌁</span>
+              <h3 class="mt-6 font-display text-xl font-bold">
+                Sustainability
+              </h3>
+              <p class="mt-2 text-white/60">
+                Supporting practical, locally led paths to self-reliance.
+              </p>
+            </div>
+          </div>
+          <p class="mt-8 text-sm text-white/45">
+            Draft objective for organisational approval.
+          </p>
+        </div>
+      </section>
+      <section id="programmes" class="paper py-24 lg:py-32">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div
+            class="flex flex-col justify-between gap-6 md:flex-row md:items-end"
+          >
+            <div>
+              <p class="eyebrow">Our Programmes</p>
+              <h2 class="section-title mt-4 text-4xl sm:text-5xl">
+                Ideas made practical.
+              </h2>
+            </div>
+            <p class="max-w-xl leading-7 text-ink/65">
+              Our programmes turn purpose into action—helping people build
+              ability, confidence, connection and a foundation for lasting
+              progress.
+            </p>
+          </div>
+          <div class="mt-14 grid gap-7 lg:grid-cols-3">
+            <article
+              class="reveal overflow-hidden rounded-3xl bg-white shadow-xl shadow-ink/5"
+            >
+              <img
+                src="images/illustrations/talent-sports.webp"
+                alt="Pencil illustration of African youth developing talents through athletics, football and art"
+                loading="lazy"
+                class="aspect-[4/3] w-full object-cover"
+              />
+              <div class="p-8">
+                <p class="eyebrow">Youth & ability</p>
+                <h3 class="mt-3 font-display text-2xl font-bold">
+                  Talent & Sports Development
+                </h3>
+                <p class="mt-3 leading-7 text-ink/65">
+                  We help children and young people discover their strengths,
+                  develop discipline and gain platforms to participate and
+                  shine.
+                </p>
+              </div>
+            </article>
+            <article
+              class="reveal overflow-hidden rounded-3xl bg-white shadow-xl shadow-ink/5"
+            >
+              <img
+                src="images/illustrations/community-empowerment.webp"
+                alt="Pencil illustration of African community members learning and building practical skills together"
+                loading="lazy"
+                class="aspect-[4/3] w-full object-cover"
+              />
+              <div class="p-8">
+                <p class="eyebrow">Skills & opportunity</p>
+                <h3 class="mt-3 font-display text-2xl font-bold">
+                  Community Empowerment
+                </h3>
+                <p class="mt-3 leading-7 text-ink/65">
+                  Mentorship, digital learning and practical skills connect
+                  underserved people with knowledge and opportunity.
+                </p>
+              </div>
+            </article>
+            <article
+              class="reveal overflow-hidden rounded-3xl bg-white shadow-xl shadow-ink/5"
+            >
+              <img
+                src="images/illustrations/sustainability.webp"
+                alt="Pencil illustration of an African community farming, planting trees and harvesting rainwater"
+                loading="lazy"
+                class="aspect-[4/3] w-full object-cover"
+              />
+              <div class="p-8">
+                <p class="eyebrow">Local resilience</p>
+                <h3 class="mt-3 font-display text-2xl font-bold">
+                  Sustainability & Self-Reliance
+                </h3>
+                <p class="mt-3 leading-7 text-ink/65">
+                  Community-led projects in environmental care, agriculture and
+                  practical livelihoods strengthen long-term resilience.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="py-24 lg:py-32">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="grid gap-6 md:grid-cols-[1fr_.65fr] md:items-end">
+            <div>
+              <p class="eyebrow">Gallery</p>
+              <h2 class="section-title mt-4 text-4xl sm:text-5xl">
+                Nyuka Programme
+              </h2>
+            </div>
+            <p class="leading-7 text-ink/65">
+              Moments from activities, learning sessions and community
+              engagements. Select an image to view it in full.
+            </p>
+          </div>
+          <div class="mt-14 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-5">
+            <button
+              class="gallery-item col-span-2 row-span-2 overflow-hidden rounded-3xl text-left"
+              data-caption="Young people taking part in a Nyuka Programme learning session"
+            >
+              <img
+                src="images/foundation_images/IMG_1705.jpg"
+                alt="Young people participating in a Nyuka Programme learning session"
+                loading="lazy"
+                class="h-full min-h-72 w-full object-cover transition duration-500 hover:scale-105"
+              /></button
+            ><button
+              class="gallery-item overflow-hidden rounded-3xl text-left"
+              data-caption="Hands-on digital learning and mentorship"
+            >
+              <img
+                src="images/foundation_images/IMG_1767.jpg"
+                alt="Participants engaged in hands-on digital learning"
+                loading="lazy"
+                class="aspect-square w-full object-cover transition duration-500 hover:scale-105"
+              /></button
+            ><button
+              class="gallery-item overflow-hidden rounded-3xl text-left"
+              data-caption="Community engagement through the Nyuka Programme"
+            >
+              <img
+                src="images/foundation_images/IMG_1726.jpg"
+                alt="Community members during a Nyuka Programme engagement"
+                loading="lazy"
+                class="aspect-square w-full object-cover transition duration-500 hover:scale-105"
+              /></button
+            ><button
+              class="gallery-item overflow-hidden rounded-3xl text-left"
+              data-caption="Learning, sharing and growing together"
+            >
+              <img
+                src="images/foundation_images/IMG_1825.jpg"
+                alt="Young participants learning together"
+                loading="lazy"
+                class="aspect-square w-full object-cover transition duration-500 hover:scale-105"
+              /></button
+            ><button
+              class="gallery-item overflow-hidden rounded-3xl text-left"
+              data-caption="Building confidence through participation"
+            >
+              <img
+                src="images/foundation_images/IMG_1682.jpg"
+                alt="Programme participants taking part in a group activity"
+                loading="lazy"
+                class="aspect-square w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </button>
+          </div>
+          <p class="mt-5 text-sm text-ink/50">
+            Gallery title and captions are ready for final organisational
+            confirmation.
+          </p>
+        </div>
+      </section>
+      <section id="get-involved" class="bg-sky py-24 text-white lg:py-32">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="grid gap-10 lg:grid-cols-[.75fr_1.25fr]">
+            <div>
+              <p class="eyebrow !text-sun">Get Involved</p>
+              <h2 class="section-title mt-4 text-4xl sm:text-5xl">
+                Change is something we build together.
+              </h2>
+              <p class="mt-6 max-w-lg text-lg leading-8 text-white/75">
+                Whether you bring time, expertise, resources or partnership,
+                there is a place for you in this work.
+              </p>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <a
+                href="mailto:info@christophermsandofoundation.org?subject=Volunteer%20With%20CM"
+                class="rounded-3xl bg-white p-7 text-ink transition hover:-translate-y-1"
+                ><span class="text-sm font-bold text-clay">01</span>
+                <h3 class="mt-8 font-display text-2xl font-bold">
+                  Volunteer With Us
+                </h3>
+                <p class="mt-3 text-ink/60">
+                  Share your time, experience or professional skills.
+                </p>
+                <span class="mt-6 inline-block font-bold text-sky"
+                  >Start a conversation →</span
+                ></a
+              ><a
+                href="mailto:info@christophermsandofoundation.org?subject=Support%20CM%20Programmes"
+                class="rounded-3xl bg-ink p-7 text-white transition hover:-translate-y-1"
+                ><span class="text-sm font-bold text-sun">02</span>
+                <h3 class="mt-8 font-display text-2xl font-bold">
+                  Support Our Programmes
+                </h3>
+                <p class="mt-3 text-white/60">
+                  Help resources reach activities with meaningful impact.
+                </p>
+                <span class="mt-6 inline-block font-bold text-sun"
+                  >Offer support →</span
+                ></a
+              ><a
+                href="mailto:info@christophermsandofoundation.org?subject=Partnership%20With%20CM"
+                class="rounded-3xl bg-paper p-7 text-ink transition hover:-translate-y-1"
+                ><span class="text-sm font-bold text-clay">03</span>
+                <h3 class="mt-8 font-display text-2xl font-bold">
+                  Partner With CM
+                </h3>
+                <p class="mt-3 text-ink/60">
+                  Explore collaboration as an institution, business or community
+                  group.
+                </p>
+                <span class="mt-6 inline-block font-bold text-sky"
+                  >Explore partnership →</span
+                ></a
+              ><a
+                href="mailto:info@christophermsandofoundation.org?subject=CM%20Online%20Store%20Enquiry"
+                class="rounded-3xl border border-white/30 p-7 transition hover:-translate-y-1 hover:bg-white/10"
+                ><span class="text-sm font-bold text-sun">04</span>
+                <h3 class="mt-8 font-display text-2xl font-bold">
+                  Shop at Our Store
+                </h3>
+                <p class="mt-3 text-white/70">
+                  Discover CM items and support the Foundation through every
+                  purchase.
+                </p>
+                <span class="mt-6 inline-block font-bold text-sun"
+                  >Request the store link →</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="stay-in-touch" class="paper py-24 lg:py-32">
+        <div class="mx-auto max-w-4xl px-5 text-center lg:px-8">
+          <p class="eyebrow">Stay in Touch With Us</p>
+          <h2 class="section-title mt-4 text-4xl sm:text-5xl">
+            Keep close to the work.
+          </h2>
+          <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-ink/65">
+            Stay connected with CM and be the first to hear about our
+            programmes, upcoming activities, community initiatives,
+            opportunities and the impact we are creating together.
+          </p>
+          <form
+            id="subscribe-form"
+            action="https://formsubmit.co/info@christophermsandofoundation.org"
+            method="POST"
+            class="mx-auto mt-9 max-w-2xl rounded-3xl bg-white p-4 shadow-xl shadow-ink/5 sm:p-6"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New CM website subscriber"
+            /><input type="hidden" name="_captcha" value="false" /><label
+              for="email"
+              class="sr-only"
+              >Email address</label
+            >
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                placeholder="Your email address"
+                class="min-h-14 flex-1 rounded-full border border-ink/20 px-6 outline-none transition focus:border-sky focus:ring-4 focus:ring-sky/15"
+              /><button
+                type="submit"
+                class="btn min-h-14 bg-clay text-white hover:bg-ink"
+              >
+                Subscribe
+              </button>
+            </div>
+            <label
+              class="mt-4 flex items-start gap-3 text-left text-sm text-ink/55"
+              ><input
+                name="consent"
+                type="checkbox"
+                required
+                class="mt-1 h-4 w-4 accent-sky"
+              /><span
+                >I agree to receive CM news and updates. My email will only be
+                used for this purpose, and I can unsubscribe at any time.</span
+              ></label
+            >
+            <p
+              id="form-status"
+              class="mt-4 hidden rounded-xl bg-leaf/10 p-3 text-sm font-semibold text-leaf"
+              role="status"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-ink text-white">
+      <div
+        class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:grid-cols-2 lg:grid-cols-[1.2fr_.8fr_.8fr] lg:px-8"
+      >
+        <div>
+          <span class="inline-block rounded-xl bg-white p-3"
+            ><img
+              src="images/logo.png"
+              alt="Christopher Msando Foundation"
+              class="h-9 w-auto"
+          /></span>
+          <p class="mt-5 max-w-sm text-white/60">
+            Nurturing talent, strengthening communities and building sustainable
+            pathways to self-reliance.
+          </p>
+        </div>
+        <div>
+          <h2 class="font-display font-bold">Explore</h2>
+          <div class="mt-4 grid gap-2 text-white/65">
+            <a href="#about">About Us</a><a href="#objectives">Our Objectives</a
+            ><a href="#programmes">Programmes</a><a href="#gallery">Gallery</a>
+          </div>
+        </div>
+        <div>
+          <h2 class="font-display font-bold">Connect</h2>
+          <div class="mt-4 grid gap-2 text-white/65">
+            <a href="#get-involved">Get Involved</a
+            ><a href="#stay-in-touch">Stay in Touch</a
+            ><a href="mailto:info@christophermsandofoundation.org"
+              >info@christophermsandofoundation.org</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10">
+        <div
+          class="mx-auto flex max-w-7xl flex-col justify-between gap-2 px-5 py-6 text-sm text-white/45 sm:flex-row lg:px-8"
+        >
+          <p>© <span id="year"></span> Christopher Msando Foundation.</p>
+          <p>Opportunity · Dignity · Self-reliance</p>
+        </div>
+      </div>
+    </footer>
+    <dialog
+      id="lightbox"
+      class="m-auto w-[min(94vw,1000px)] rounded-3xl bg-ink p-3 text-white backdrop:bg-ink/90"
+    >
+      <button
+        id="lightbox-close"
+        class="absolute right-5 top-5 z-10 rounded-full bg-white p-2 text-ink"
+        aria-label="Close image"
+      >
+        <svg
+          class="h-5 w-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-width="2"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg></button
+      ><img
+        id="lightbox-image"
+        src=""
+        alt=""
+        class="max-h-[78vh] w-full rounded-2xl object-contain"
+      />
+      <p
+        id="lightbox-caption"
+        class="px-3 py-4 text-center text-sm text-white/70"
+      ></p>
+    </dialog>
+    <script>
+      const menuButton = document.getElementById("menu-button"),
+        mobileMenu = document.getElementById("mobile-menu");
+      function setMenu(open) {
+        mobileMenu.classList.toggle("hidden", !open);
+        menuButton.setAttribute("aria-expanded", String(open));
+        menuButton.setAttribute(
+          "aria-label",
+          open ? "Close menu" : "Open menu",
+        );
+      }
+      menuButton.addEventListener("click", () =>
+        setMenu(mobileMenu.classList.contains("hidden")),
+      );
+      mobileMenu
+        .querySelectorAll("a")
+        .forEach((a) => a.addEventListener("click", () => setMenu(false)));
+      const lightbox = document.getElementById("lightbox"),
+        lightboxImage = document.getElementById("lightbox-image"),
+        lightboxCaption = document.getElementById("lightbox-caption");
+      document.querySelectorAll(".gallery-item").forEach((button) =>
+        button.addEventListener("click", () => {
+          const image = button.querySelector("img");
+          lightboxImage.src = image.src;
+          lightboxImage.alt = image.alt;
+          lightboxCaption.textContent = button.dataset.caption;
+          lightbox.showModal();
+        }),
+      );
+      document
+        .getElementById("lightbox-close")
+        .addEventListener("click", () => lightbox.close());
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) lightbox.close();
+      });
+      const reveals = document.querySelectorAll(".reveal");
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) =>
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            }),
+          { threshold: 0.12 },
+        );
+        reveals.forEach((el) => observer.observe(el));
+      } else {
+        reveals.forEach((el) => el.classList.add("visible"));
+      }
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const form = document.getElementById("subscribe-form"),
+        status = document.getElementById("form-status");
+      form.addEventListener("submit", () => {
+        status.textContent =
+          "Thank you. Your subscription request is being sent…";
+        status.classList.remove("hidden");
+      });
+    </script>
+  </body>
+</html>

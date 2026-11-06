@@ -2,49 +2,45 @@
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
-    <title>Christopher Msando Foundation | Youth ICT Programs in Kenya</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Christopher Msando Foundation | Empowering Communities in Kenya
+    </title>
     <meta
       name="description"
-      content="Official site of the Christopher Msando Foundation, advancing youth and children's ICT skills, mentorship, outreach, and innovation programs in Kenya."
+      content="Christopher Msando Foundation nurtures talent, promotes sports, empowers communities and advances sustainable self-reliance in Kenya."
     />
     <meta
-      name="keywords"
-      content="Christopher Msando Foundation, youth ICT Kenya, nonprofit Kenya, youth mentorship, ICT training, community outreach, children's education, Christopher Msando"
+      property="og:title"
+      content="Christopher Msando Foundation | Opportunity. Dignity. Self-reliance."
     />
-    <meta
-      name="robots"
-      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-    />
-    <meta name="author" content="Christopher Msando Foundation" />
-    <meta name="theme-color" content="#4294d5" />
-    <link rel="canonical" href="https://christophermsandofoundation.org/" />
-
-    <!-- Social preview -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Christopher Msando Foundation" />
-    <meta property="og:locale" content="en_KE" />
-    <meta property="og:title" content="Christopher Msando Foundation | Youth ICT Programs in Kenya" />
     <meta
       property="og:description"
-      content="Official site of the Christopher Msando Foundation, advancing youth and children's ICT skills, mentorship, outreach, and innovation programs in Kenya."
+      content="Nurturing talent, strengthening communities and creating pathways to lasting self-reliance."
     />
-    <meta property="og:url" content="https://christophermsandofoundation.org/" />
+    <meta
+      property="og:url"
+      content="https://christophermsandofoundation.org/"
+    />
     <meta
       property="og:image"
-      content="https://christophermsandofoundation.org/images/logo.png"
-    />
-    <meta property="og:image:alt" content="Christopher Msando Foundation logo" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Christopher Msando Foundation | Youth ICT Programs in Kenya" />
-    <meta
-      name="twitter:description"
-      content="Official site of the Christopher Msando Foundation, advancing youth and children's ICT skills, mentorship, outreach, and innovation programs in Kenya."
+      content="https://christophermsandofoundation.org/images/illustrations/community-hero.webp"
     />
     <meta
-      name="twitter:image"
-      content="https://christophermsandofoundation.org/images/logo.png"
+      property="og:image:alt"
+      content="Illustration of African young people learning, playing sport and caring for their community"
     />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="images/logobg.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -52,330 +48,973 @@
         "name": "Christopher Msando Foundation",
         "url": "https://christophermsandofoundation.org/",
         "logo": "https://christophermsandofoundation.org/images/logo.png",
-        "image": "https://christophermsandofoundation.org/images/logo.png",
-        "description": "Official site of the Christopher Msando Foundation, advancing youth and children's ICT skills, mentorship, outreach, and innovation programs in Kenya.",
         "email": "info@christophermsandofoundation.org",
         "areaServed": "Kenya",
-        "sameAs": []
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Christopher Msando Foundation",
-        "url": "https://christophermsandofoundation.org/"
+        "description": "A Kenyan foundation nurturing talent, promoting sports, empowering communities and advancing sustainable self-reliance."
       }
     </script>
 
-    <link rel="icon" type="image/png" href="images/logobg.png" />
-    <link rel="shortcut icon" href="images/logobg.png" />
-
-    <!-- CDN dependencies the user agreed to keep -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="tailwind.config.js"></script>
-    <style type="text/tailwindcss">
-      @layer base {
-        body {
-          @apply font-sans text-ink antialiased;
-        }
-        .three-canvas {
-          position: absolute;
-          inset: 0;
-          width: 100%;
-          height: 100%;
-          pointer-events: none;
+    <script>
+      // CM brand tokens (same palette as index.html), mapped onto the template's token names.
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["DM Sans", "ui-sans-serif", "system-ui", "sans-serif"],
+              display: ["Manrope", "DM Sans", "sans-serif"],
+            },
+            colors: {
+              ink: "#102f47", // headings, primary buttons
+              body: "#4b5d6b", // paragraph text
+              mist: "#fbf5e8", // paper — soft surfaces
+              line: "#e8e1d3", // borders
+              sun: "#e9b44c", // gold accent
+              night: "#0b2233", // deep ink surface
+              coral: "#bf633d", // clay — hover/accent
+              leaf: "#b9cfb2", // soft sage
+              sage: "#58745c", // deep leaf
+              sky: "#a9cfec", // soft sky
+            },
+            letterSpacing: { tightish: "-0.028em" },
+          },
+        },
+      };
+    </script>
+    <style>
+      h1,
+      h2,
+      h3,
+      .font-display {
+        font-family: Manrope, "DM Sans", sans-serif;
+      }
+      .marquee {
+        animation: marquee 45s linear infinite;
+      }
+      .marquee:hover {
+        animation-play-state: paused;
+      }
+      @keyframes marquee {
+        to {
+          transform: translateX(calc(-50% - 0.5rem));
         }
       }
-      @layer components {
-        .container-la {
-          @apply mx-auto w-full max-w-container px-5 sm:px-6 lg:px-8;
+      @media (prefers-reduced-motion: reduce) {
+        .marquee {
+          animation: none;
         }
-        .btn-primary {
-          @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand px-7 py-4
-               text-base font-semibold text-white transition-all duration-200
-               hover:gap-3 hover:bg-brandhover;
-        }
-        .eyebrow {
-          @apply text-sm font-semibold uppercase tracking-[0.08em] text-brand;
-        }
+      }
+      main section {
+        scroll-margin-top: 6rem;
+      }
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible,
+      summary:focus-visible {
+        outline: 3px solid #e9b44c;
+        outline-offset: 3px;
       }
     </style>
   </head>
 
-  <body class="bg-white">
-    <!-- ================= ANNOUNCEMENT BAR ================= -->
-    <!-- CSS-only dismiss: the checkbox lives before the bar; checking it hides the bar via peer-checked -->
-    <input type="checkbox" id="announce-close" class="peer sr-only" />
-    <div class="bg-ink text-cream peer-checked:hidden">
+  <body
+    class="bg-[#fffdf8] font-sans text-lg leading-[1.7] text-body antialiased"
+  >
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-white focus:px-5 focus:py-3"
+      >Skip to content</a
+    >
+
+    <!-- ============ HEADER ============ -->
+    <header
+      class="absolute inset-x-0 top-0 z-30 mt-5 px-4 md:mt-8 md:px-8 lg:mt-10"
+    >
       <div
-        class="container-la flex items-center justify-between gap-4 py-2.5 text-sm"
+        class="relative mx-auto flex max-w-[1280px] items-center justify-between gap-8"
       >
-        <div class="flex flex-wrap items-center gap-x-6 gap-y-1">
-          <p>
-            Drop us a line
-            <a
-              href="mailto:info@christophermsandofoundation.org?subject=Get%20Involved"
-              class="font-semibold text-brand hover:underline"
-              >info@christophermsandofoundation.org</a
-            >
-          </p>
-          <p class="hidden sm:block">
-            Learn more
-            <a href="#features" class="font-semibold text-brand hover:underline"
-              >About Us</a
-            >
-          </p>
-        </div>
+        <a
+          href="#home"
+          class="flex items-center rounded-2xl bg-white p-2 shadow-sm"
+          aria-label="Christopher Msando Foundation home"
+        >
+          <img src="images/logo.png" alt="" class="h-9 w-auto" />
+        </a>
+
+        <!-- Mobile nav toggle (CSS-only: checkbox + peer) -->
         <label
-          for="announce-close"
-          class="cursor-pointer rounded p-1 text-cream/70 transition hover:text-white"
-          aria-label="Dismiss announcement"
+          for="nav-toggle"
+          class="cursor-pointer rounded-full bg-white p-2 text-ink shadow-sm lg:hidden"
+          aria-label="Toggle navigation"
         >
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4"
+            class="h-6 w-6"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             stroke-width="2"
             stroke-linecap="round"
-            stroke-linejoin="round"
             aria-hidden="true"
           >
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
           </svg>
         </label>
+        <input type="checkbox" id="nav-toggle" class="peer hidden" />
+
+        <nav
+          aria-label="Main navigation"
+          class="absolute inset-x-0 top-full mt-3 hidden rounded-3xl bg-white p-4 shadow-xl peer-checked:block lg:static lg:mt-0 lg:flex lg:flex-1 lg:items-center lg:justify-end lg:gap-4 lg:bg-transparent lg:p-0 lg:shadow-none"
+        >
+          <ul class="flex flex-col gap-2 text-base lg:flex-row lg:items-center">
+            <li>
+              <a
+                href="#about"
+                class="block rounded-full bg-white px-3 py-1 font-medium text-ink transition hover:bg-sun"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#objectives"
+                class="block rounded-full bg-white px-3 py-1 font-medium text-ink transition hover:bg-sun"
+                >Our Objectives</a
+              >
+            </li>
+            <li>
+              <a
+                href="#programmes"
+                class="block rounded-full bg-white px-3 py-1 font-medium text-ink transition hover:bg-sun"
+                >Programmes</a
+              >
+            </li>
+            <li>
+              <a
+                href="#gallery"
+                class="block rounded-full bg-white px-3 py-1 font-medium text-ink transition hover:bg-sun"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="#get-involved"
+                class="block rounded-full bg-white px-3 py-1 font-medium text-ink transition hover:bg-sun"
+                >Get Involved</a
+              >
+            </li>
+          </ul>
+          <a
+            href="#stay-in-touch"
+            class="mt-4 block rounded-full bg-ink px-6 py-1 text-center text-base font-semibold text-white transition hover:bg-coral lg:mt-0"
+            >Stay in Touch</a
+          >
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <!-- ================= HERO + NAV ================= -->
-    <header class="relative isolate overflow-hidden bg-beige">
-      <!-- Mobile-nav toggle: peer checkbox controls the menu below -->
-      <input type="checkbox" id="nav-toggle" class="peer hidden" />
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section id="home" class="overflow-hidden px-4 pt-28 md:px-8 lg:pt-10">
+        <div
+          class="mx-auto flex max-w-[1320px] flex-col gap-12 lg:flex-row lg:gap-16"
+        >
+          <div
+            class="flex flex-col gap-12 lg:mb-16 lg:mt-32 lg:max-w-[42%] lg:gap-20"
+          >
+            <div class="flex flex-col items-start gap-10">
+              <div class="flex flex-col items-start gap-4">
+                <span
+                  class="rounded-full border border-line px-3 py-0.5 text-base font-medium text-ink"
+                  >Christopher Msando Foundation</span
+                >
+                <h1
+                  class="text-4xl font-bold leading-[1.1] tracking-[-0.035em] text-ink sm:text-[56px] lg:text-[72px]"
+                >
+                  Growing talent.
+                  <span class="text-coral">Building futures.</span>
+                </h1>
+                <p class="text-lg sm:text-xl">
+                  We create opportunities for children, young people and
+                  communities to develop their talents, strengthen practical
+                  skills and shape a more self-reliant future.
+                </p>
+              </div>
+              <div class="flex flex-wrap items-center gap-6">
+                <a
+                  href="#about"
+                  class="rounded-full bg-ink px-10 py-3 text-base font-semibold text-white transition hover:bg-coral"
+                  >Learn More About Us</a
+                >
+                <a
+                  href="#programmes"
+                  class="text-lg font-medium text-ink transition hover:text-coral"
+                  >Explore Our Programmes →</a
+                >
+              </div>
+            </div>
+            <div class="flex flex-col gap-5">
+              <p class="text-lg text-ink">What we focus on</p>
+              <div class="flex flex-wrap gap-3 text-base font-medium text-ink">
+                <span class="rounded-full bg-leaf px-4 py-1"
+                  >Talent development</span
+                >
+                <span class="rounded-full bg-sun px-4 py-1"
+                  >Sports &amp; youth</span
+                >
+                <span class="rounded-full bg-sky px-4 py-1">Empowerment</span>
+                <span class="rounded-full bg-mist px-4 py-1 ring-1 ring-line"
+                  >Self-reliance</span
+                >
+              </div>
+            </div>
+          </div>
 
-      <div class="bg-brand">
-        <nav class="container-la flex items-center justify-between gap-4 py-6">
-        <!-- Brand: logo image -->
-        <a href="#" class="flex items-center">
-          <span
-            class="inline-flex items-center rounded-xl bg-white px-3 py-2"
+          <div
+            class="relative min-h-[560px] w-full overflow-hidden rounded-[45px] lg:-mr-8 lg:mt-28 lg:w-[52%] lg:max-w-[680px]"
           >
             <img
-              src="images/logo.png"
-              alt="Christopher Msando Foundation"
-              class="h-8 w-auto sm:h-9"
+              src="images/foundation_images/IMG_1823.jpg"
+              alt="CM team members in front of the Foundation banner"
+              fetchpriority="high"
+              class="absolute inset-0 h-full w-full object-cover"
             />
-          </span>
-        </a>
-
-        <!-- Desktop links -->
-        <div class="hidden items-center gap-6 lg:flex">
-          <a href="#" class="text-[15px] font-medium text-white">Home</a>
-          <a
-            href="#features"
-            class="text-[15px] font-medium text-white/85 transition hover:text-white"
-            >About</a
-          >
-          <a
-            href="#projects"
-            class="text-[15px] font-medium text-white/85 transition hover:text-white"
-            >Programs</a
-          >
-          <a
-            href="#newsletter"
-            class="text-[15px] font-medium text-white/85 transition hover:text-white"
-            >Get Involved</a
-          >
-          <a
-            href="#blog"
-            class="text-[15px] font-medium text-white/85 transition hover:text-white"
-            >Blog</a
-          >
-          <a
-            href="#footer"
-            class="text-[15px] font-medium text-white/85 transition hover:text-white"
-            >Contact</a
-          >
-        </div>
-
-        <!-- Donate + hamburger -->
-        <div class="flex items-center gap-3">
-          <a href="#newsletter" class="btn-primary hidden !py-3 !bg-white !text-brand hover:!bg-cream lg:inline-flex">
-            Donate
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent"
               aria-hidden="true"
+            ></div>
+            <div
+              class="absolute inset-x-6 bottom-6 flex flex-wrap items-end justify-between gap-6 sm:inset-x-10 sm:bottom-10"
             >
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </a>
-          <!-- Hamburger (mobile) -->
-          <label
-            for="nav-toggle"
-            class="grid h-10 w-10 cursor-pointer place-items-center rounded-lg text-white lg:hidden"
-            aria-label="Toggle menu"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-          </label>
-        </div>
-      </nav>
-      </div>
-
-      <!-- Mobile menu: hidden until the peer checkbox is checked -->
-      <div class="hidden border-t border-ink/10 peer-checked:block lg:!hidden">
-        <div class="container-la flex flex-col gap-1 py-4">
-          <a href="#" class="rounded-lg px-3 py-2 font-medium text-brand"
-            >Home</a
-          >
-          <a
-            href="#features"
-            class="rounded-lg px-3 py-2 font-medium text-ink/80 hover:bg-white"
-            >About</a
-          >
-          <a
-            href="#projects"
-            class="rounded-lg px-3 py-2 font-medium text-ink/80 hover:bg-white"
-            >Programs</a
-          >
-          <a
-            href="#newsletter"
-            class="rounded-lg px-3 py-2 font-medium text-ink/80 hover:bg-white"
-            >Get Involved</a
-          >
-          <a
-            href="#blog"
-            class="rounded-lg px-3 py-2 font-medium text-ink/80 hover:bg-white"
-            >Blog</a
-          >
-          <a
-            href="#footer"
-            class="rounded-lg px-3 py-2 font-medium text-ink/80 hover:bg-white"
-            >Contact</a
-          >
-          <a href="#newsletter" class="btn-primary mt-2">Support Our Mission</a>
-        </div>
-      </div>
-
-      <div
-        data-three-scene
-        data-three-theme="light"
-        class="pointer-events-none absolute inset-0 opacity-70"
-        aria-hidden="true"
-      ></div>
-
-      <!-- Hero content -->
-      <div
-        class="container-la relative z-10 grid items-center gap-12 py-16 lg:grid-cols-2 lg:py-24"
-      >
-        <div>
-          <h1
-            class="text-4xl font-extrabold leading-[1.08] text-ink sm:text-5xl lg:text-[64px]"
-          >
-            Transformational Technology
-          </h1>
-          <p class="mt-6 max-w-xl text-lg text-ink/70">
-            The Christopher Msando Foundation provides exposure and skills in
-            technology to youth and children with little to no access — growing
-            their talents, nurturing their character and improving their quality
-            of life.
-          </p>
-          <div class="mt-8 flex flex-wrap items-center gap-6">
-            <a href="#newsletter" class="btn-primary">
-              Support Our Mission
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 16 16 12 12 8" />
-                <line x1="8" y1="12" x2="16" y2="12" />
-              </svg>
-            </a>
-            <div>
-              <div
-                class="text-xs font-semibold uppercase tracking-wide text-ink/50"
-              >
-                Follow us on
+              <div class="flex flex-col items-start">
+                <p
+                  class="rounded-full bg-white px-3.5 text-lg font-medium leading-snug text-ink"
+                >
+                  Real moments
+                </p>
+                <p
+                  class="rounded-full bg-white px-3.5 text-lg font-medium leading-snug text-ink"
+                >
+                  from our community
+                </p>
               </div>
-              <div class="mt-2 flex items-center gap-3">
-                <a
-                  href="#"
-                  aria-label="Facebook"
-                  class="grid h-9 w-9 place-items-center rounded-full bg-white text-ink/70 transition hover:bg-brand hover:text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    aria-hidden="true"
+              <div
+                class="flex max-w-[230px] flex-col gap-4 rounded-[32px] bg-white p-5"
+              >
+                <div class="flex flex-col gap-1 text-xs leading-normal">
+                  <p class="text-lg font-semibold text-ink">Rooted in Kenya</p>
+                  <p>
+                    Working with children, youth and communities in Nairobi,
+                    Siaya and beyond.
+                  </p>
+                </div>
+                <div class="flex items-center">
+                  <img
+                    src="images/foundation_images/IMG_1704.jpg"
+                    alt=""
+                    class="h-10 w-10 rounded-full border-2 border-white object-cover"
+                  />
+                  <img
+                    src="images/foundation_images/IMG_1728.jpg"
+                    alt=""
+                    class="-ml-2 h-10 w-10 rounded-full border-2 border-white object-cover"
+                  />
+                  <img
+                    src="images/foundation_images/IMG_1729.jpg"
+                    alt=""
+                    class="-ml-2 h-10 w-10 rounded-full border-2 border-white object-cover"
+                  />
+                  <a
+                    href="#gallery"
+                    class="-ml-2 flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-sun text-ink"
+                    aria-label="View the gallery"
+                    >→</a
                   >
-                    <path
-                      d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  aria-label="LinkedIn"
-                  class="grid h-9 w-9 place-items-center rounded-full bg-white text-ink/70 transition hover:bg-brand hover:text-white"
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="px-4 pt-20 md:px-8 lg:pt-32">
+        <div class="mx-auto flex max-w-[1280px] flex-col items-center gap-14">
+          <div class="flex flex-col items-center gap-4 text-center">
+            <span
+              class="relative flex items-center rounded-full border border-line py-1 pl-11 pr-5 text-base font-medium text-ink"
+            >
+              <span
+                class="absolute left-0 flex h-[35px] w-[35px] items-center justify-center rounded-full bg-leaf"
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"
+                  />
+                </svg>
+              </span>
+              About Us
+            </span>
+            <h2
+              class="text-3xl font-bold leading-[1.2] tracking-tightish text-ink sm:text-4xl lg:text-[54px]"
+            >
+              A legacy turned into opportunity
+            </h2>
+            <p class="max-w-[560px]">
+              The Christopher Msando Foundation advances causes Christopher
+              believed in by opening pathways for young people and communities
+              to learn, create, lead and thrive.
+            </p>
+          </div>
+
+          <div class="grid w-full gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <article
+              class="flex flex-col items-start gap-8 rounded-[32px] bg-coral p-8"
+            >
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.16em] text-white/80"
+              >
+                01
+              </p>
+              <div class="flex flex-col gap-3 text-white">
+                <h3 class="text-3xl font-bold tracking-tightish">Who We Are</h3>
+                <p class="text-base text-white/90">
+                  A Kenyan foundation supporting children, youth and communities
+                  through skills, mentorship, talent development and practical
+                  opportunities.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="flex flex-col items-start gap-8 rounded-[32px] bg-night p-8"
+            >
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.16em] text-white/70"
+              >
+                02
+              </p>
+              <div class="flex flex-col gap-3 text-white">
+                <h3 class="text-3xl font-bold tracking-tightish">
+                  Our Mission
+                </h3>
+                <p class="text-base text-white/85">
+                  To nurture potential, expand access to opportunity and equip
+                  people to build lives and communities of purpose and dignity.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="flex flex-col items-start gap-8 rounded-[32px] bg-sun p-8 md:col-span-2 lg:col-span-1"
+            >
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.16em] text-ink/70"
+              >
+                03
+              </p>
+              <div class="flex flex-col gap-3 text-ink">
+                <h3 class="text-3xl font-bold tracking-tightish">Our Vision</h3>
+                <p class="text-base text-ink/80">
+                  Thriving communities where every young person can develop
+                  their abilities, participate fully and create a sustainable
+                  future.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WHO WAS CM ============ -->
+      <section class="px-4 py-20 md:px-8 lg:py-32">
+        <div
+          class="mx-auto flex max-w-[1170px] flex-col items-center gap-12 lg:flex-row lg:gap-20"
+        >
+          <div
+            class="relative flex w-full max-w-[520px] shrink-0 items-center justify-center overflow-hidden rounded-[32px] bg-mist p-12"
+          >
+            <img
+              src="images/logobg.png"
+              alt="Christopher Msando Foundation emblem"
+              loading="lazy"
+              class="aspect-square w-full max-w-[360px] object-contain"
+            />
+            <div
+              class="absolute bottom-6 right-6 flex max-w-[220px] flex-col gap-1 rounded-[32px] bg-white p-5 text-xs leading-normal shadow-sm sm:bottom-8 sm:right-8"
+            >
+              <p class="text-lg font-semibold text-ink">In his honour</p>
+              <p>Carrying his values forward since 28 July 2017.</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-start gap-10">
+            <div class="flex flex-col items-start gap-4">
+              <span
+                class="rounded-full border border-line px-3 py-0.5 text-base font-medium text-ink"
+                >04 · Who Was CM?</span
+              >
+              <h3
+                class="text-2xl font-bold leading-[1.3] text-ink sm:text-3xl lg:text-4xl"
+              >
+                Christopher Msando: integrity, resilience and empathy
+              </h3>
+              <p>
+                Christopher Msando was the Information Communication Technology
+                (ICT) Manager at Kenya's Independent Electoral and Boundaries
+                Commission (IEBC) at the time of his death on 28 July 2017.
+              </p>
+              <p>
+                He is remembered as hardworking, keen on detail, resilient,
+                honest and forthright, decisive, an initiator, loving and
+                empathetic. The Foundation was established in his honour to
+                advance the causes he believed in.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 text-sm font-medium text-ink">
+              <span class="rounded-full border border-line px-3 py-0.5"
+                >Resilience</span
+              >
+              <span class="rounded-full border border-line px-3 py-0.5"
+                >Honesty</span
+              >
+              <span class="rounded-full border border-line px-3 py-0.5"
+                >Decisiveness</span
+              >
+              <span class="rounded-full border border-line px-3 py-0.5"
+                >Empathy</span
+              >
+              <span class="rounded-full border border-line px-3 py-0.5"
+                >Attention to detail</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ OBJECTIVES ============ -->
+      <section id="objectives" class="px-4 md:px-8">
+        <div
+          class="mx-auto flex max-w-[1280px] flex-col gap-14 overflow-hidden rounded-[32px] bg-leaf p-6 sm:p-10 lg:p-[60px]"
+        >
+          <div class="flex flex-col gap-4">
+            <span
+              class="self-start rounded-full bg-white px-3 py-0.5 text-base font-medium text-ink"
+              >Our Objectives</span
+            >
+            <h2
+              class="max-w-[1000px] text-2xl font-bold leading-[1.3] tracking-tightish text-ink sm:text-3xl lg:text-[42px]"
+            >
+              To nurture talent and promote sports development, empower
+              individuals and communities, and advance sustainable initiatives
+              that strengthen skills, create opportunities and foster long-term
+              self-reliance.
+            </h2>
+          </div>
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="flex flex-col gap-2 rounded-3xl bg-white p-6">
+              <div class="flex items-center gap-2">
+                <svg
+                  class="h-6 w-6 text-coral"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polygon
+                    points="12 2 15.1 8.3 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 8.9 8.3 12 2"
+                  />
+                </svg>
+                <p class="text-xl font-semibold text-ink">Talent Development</p>
+              </div>
+              <p class="text-base">
+                Discovering potential and creating room for it to grow.
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 rounded-3xl bg-white p-6">
+              <div class="flex items-center gap-2">
+                <svg
+                  class="h-6 w-6 text-coral"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                <p class="text-xl font-semibold text-ink">Sports Development</p>
+              </div>
+              <p class="text-base">
+                Building confidence, teamwork and healthy participation.
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 rounded-3xl bg-white p-6">
+              <div class="flex items-center gap-2">
+                <svg
+                  class="h-6 w-6 text-coral"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+                <p class="text-xl font-semibold text-ink">Empowerment</p>
+              </div>
+              <p class="text-base">
+                Connecting people with skills, mentorship and opportunity.
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 rounded-3xl bg-white p-6">
+              <div class="flex items-center gap-2">
+                <svg
+                  class="h-6 w-6 text-coral"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M12 22v-6" />
+                  <path d="M12 2 5 12h4l-3 4h12l-3-4h4z" />
+                </svg>
+                <p class="text-xl font-semibold text-ink">Sustainability</p>
+              </div>
+              <p class="text-base">
+                Supporting practical, locally led paths to self-reliance.
+              </p>
+            </div>
+          </div>
+          <div class="overflow-hidden rounded-3xl bg-white">
+            <img
+              src="images/illustrations/community-hero.webp"
+              alt="Pencil illustration of African youth learning, playing football, mentoring and planting a tree"
+              loading="lazy"
+              width="1800"
+              height="720"
+              class="w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ IN THE COMMUNITY (photo stories) ============ -->
+      <section class="px-4 pt-20 md:px-8 lg:pt-32">
+        <div class="mx-auto flex max-w-[1170px] flex-col items-center gap-20">
+          <div class="flex flex-col items-center gap-4 text-center">
+            <span
+              class="relative flex items-center rounded-full border border-line py-1 pl-11 pr-5 text-base font-medium text-ink"
+            >
+              <span
+                class="absolute left-0 flex h-[35px] w-[35px] items-center justify-center rounded-full bg-coral text-white"
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </span>
+              In the community
+            </span>
+            <h2
+              class="text-3xl font-bold leading-[1.2] tracking-tightish text-ink sm:text-4xl lg:text-[54px]"
+            >
+              Where purpose meets people
+            </h2>
+            <p class="max-w-[560px]">
+              Our work happens on school grounds and in neighbourhoods, side by
+              side with the children, families and teachers we serve.
+            </p>
+          </div>
+
+          <div
+            class="flex w-full flex-col items-center gap-12 lg:flex-row lg:gap-20"
+          >
+            <div
+              class="relative w-full max-w-[550px] shrink-0 overflow-hidden rounded-[32px]"
+            >
+              <img
+                src="images/foundation_images/IMG_1704.jpg"
+                alt="CM volunteers in aprons preparing a shared meal"
+                loading="lazy"
+                class="aspect-[4/5] w-full object-cover"
+              />
+              <div
+                class="absolute bottom-6 right-6 flex max-w-[230px] flex-col gap-1 rounded-[32px] bg-white p-5 text-xs leading-normal sm:bottom-10 sm:right-10"
+              >
+                <p class="text-lg font-semibold text-ink">Shared meals</p>
+                <p>
+                  Bringing children together around a warm meal and a day of
+                  activities.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-start gap-10">
+              <div class="flex flex-col items-start gap-4">
+                <span
+                  class="rounded-full border border-line px-3 py-0.5 text-base font-medium text-ink"
+                  >Community days</span
+                >
+                <h3
+                  class="text-2xl font-bold leading-[1.3] text-ink sm:text-3xl lg:text-4xl"
+                >
+                  Showing up for children, one school at a time
+                </h3>
+                <p>
+                  Community days bring our team and volunteers to schools for
+                  shared meals, games and time together, creating space for
+                  children to feel seen, supported and encouraged.
+                </p>
+              </div>
+              <div class="grid w-full max-w-[420px] grid-cols-2 gap-3">
+                <img
+                  src="images/foundation_images/IMG_1699.jpg"
+                  alt="Two boys playing on the school field"
+                  loading="lazy"
+                  class="aspect-square w-full rounded-3xl object-cover"
+                />
+                <img
+                  src="images/foundation_images/IMG_1738.jpg"
+                  alt="Pupils huddled together on the field"
+                  loading="lazy"
+                  class="aspect-square w-full rounded-3xl object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex w-full flex-col-reverse items-center gap-12 lg:flex-row lg:gap-20"
+          >
+            <div class="flex flex-col items-start gap-10">
+              <div class="flex flex-col items-start gap-4">
+                <span
+                  class="rounded-full border border-line px-3 py-0.5 text-base font-medium text-ink"
+                  >Practical support</span
+                >
+                <h3
+                  class="text-2xl font-bold leading-[1.3] text-ink sm:text-3xl lg:text-4xl"
+                >
+                  Equipping learners with what they need
+                </h3>
+                <p>
+                  We work with schools and parents to put practical essentials
+                  in the hands of learners, removing small barriers that stand
+                  between children and their potential.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2 text-sm font-medium text-ink">
+                <span class="rounded-full bg-leaf px-3 py-1"
+                  >Working with schools</span
+                ><span class="rounded-full bg-sun px-3 py-1"
+                  >Partnering with parents</span
+                ><span class="rounded-full bg-sky px-3 py-1"
+                  >Delivered with dignity</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative w-full max-w-[550px] shrink-0 overflow-hidden rounded-[32px]"
+            >
+              <img
+                src="images/foundation_images/IMG_1728.jpg"
+                alt="A young CM team member handing a bag to a community member"
+                loading="lazy"
+                class="aspect-[4/5] w-full object-cover"
+              />
+              <div
+                class="absolute bottom-6 left-6 flex max-w-[300px] items-center gap-3 rounded-3xl bg-white py-2.5 pl-2.5 pr-5 sm:bottom-10 sm:left-10"
+              >
+                <img
+                  src="images/foundation_images/IMG_1729.jpg"
+                  alt=""
+                  loading="lazy"
+                  class="h-[64px] w-[64px] rounded-2xl object-cover"
+                />
+                <div class="flex flex-col gap-1 text-xs leading-normal">
+                  <p class="text-lg font-semibold text-ink">Hand in hand</p>
+                  <p>Support delivered with dignity, directly to families.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROGRAMMES ============ -->
+      <section id="programmes" class="px-4 py-20 md:px-8 lg:py-32">
+        <div class="mx-auto flex max-w-[1280px] flex-col items-center gap-14">
+          <div class="flex flex-col items-center gap-4 text-center">
+            <span
+              class="relative flex items-center rounded-full border border-line py-1 pl-11 pr-5 text-base font-medium text-ink"
+            >
+              <span
+                class="absolute left-0 flex h-[35px] w-[35px] items-center justify-center rounded-full bg-sun"
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M12 3 2 20h20z" />
+                </svg>
+              </span>
+              Our Programmes
+            </span>
+            <h2
+              class="text-3xl font-bold leading-[1.2] tracking-tightish text-ink sm:text-4xl lg:text-[54px]"
+            >
+              Ideas made practical
+            </h2>
+            <p class="max-w-[560px]">
+              Our programmes turn purpose into action, helping people build
+              ability, confidence, connection and a foundation for lasting
+              progress.
+            </p>
+          </div>
+
+          <div class="grid w-full gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <article
+              class="flex flex-col gap-6 rounded-[32px] border border-line bg-white px-6 py-5"
+            >
+              <div class="h-[240px] overflow-hidden rounded-[32px] bg-mist">
+                <img
+                  src="images/illustrations/talent-sports.webp"
+                  alt="Pencil illustration of African youth developing talents through athletics, football and art"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <span
+                  class="self-start rounded-full border border-line px-3 py-0.5 text-sm font-medium text-ink"
+                  >Youth &amp; ability</span
+                >
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-xl font-semibold text-ink">
+                    Talent &amp; Sports Development
+                  </h3>
+                  <p>
+                    We help children and young people discover their strengths,
+                    develop discipline and gain platforms to participate and
+                    shine.
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#get-involved"
+                class="mt-auto rounded-full border border-line px-10 py-3 text-center text-base font-semibold text-ink transition hover:bg-ink hover:text-white"
+                >Support This Programme</a
+              >
+            </article>
+
+            <article
+              class="flex flex-col gap-6 rounded-[32px] border border-line bg-white px-6 py-5"
+            >
+              <div class="h-[240px] overflow-hidden rounded-[32px] bg-mist">
+                <img
+                  src="images/illustrations/community-empowerment.webp"
+                  alt="Pencil illustration of African community members learning and building practical skills together"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <span
+                  class="self-start rounded-full border border-line px-3 py-0.5 text-sm font-medium text-ink"
+                  >Skills &amp; opportunity</span
+                >
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-xl font-semibold text-ink">
+                    Community Empowerment
+                  </h3>
+                  <p>
+                    Mentorship, digital learning and practical skills connect
+                    underserved people with knowledge and opportunity.
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#get-involved"
+                class="mt-auto rounded-full border border-line px-10 py-3 text-center text-base font-semibold text-ink transition hover:bg-ink hover:text-white"
+                >Support This Programme</a
+              >
+            </article>
+
+            <article
+              class="flex flex-col gap-6 rounded-[32px] border border-line bg-white px-6 py-5 md:col-span-2 lg:col-span-1"
+            >
+              <div class="h-[240px] overflow-hidden rounded-[32px] bg-mist">
+                <img
+                  src="images/illustrations/sustainability.webp"
+                  alt="Pencil illustration of an African community farming, planting trees and harvesting rainwater"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition duration-500 hover:scale-105"
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <span
+                  class="self-start rounded-full border border-line px-3 py-0.5 text-sm font-medium text-ink"
+                  >Local resilience</span
+                >
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-xl font-semibold text-ink">
+                    Sustainability &amp; Self-Reliance
+                  </h3>
+                  <p>
+                    Community-led projects in environmental care, agriculture
+                    and practical livelihoods strengthen long-term resilience.
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#get-involved"
+                class="mt-auto rounded-full border border-line px-10 py-3 text-center text-base font-semibold text-ink transition hover:bg-ink hover:text-white"
+                >Support This Programme</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PHOTO STRIP (auto-scrolling marquee) ============ -->
+      <section
+        class="overflow-hidden pb-20 lg:pb-32"
+        aria-label="Moments from our community"
+      >
+        <div class="marquee flex w-max gap-4">
+          <img
+            src="images/foundation_images/IMG_1704.jpg"
+            alt=""
+            loading="lazy"
+            class="h-56 w-72 sm:h-72 sm:w-96 rounded-[32px] object-cover"
+          />
+          <img
+            src="images/illustrations/talent-sports.webp"
+            alt=""
+            loading="lazy"
+            class="h-56 w-72 bg-mist sm:h-72 sm:w-96 rounded-[32px] object-cover"
+          />
+          <img
+            src="images/foundation_images/IMG_1729.jpg"
+            alt=""
+            loading="lazy"
+            class="h-56 w-72 sm:h-72 sm:w-96 rounded-[32px] object-cover"
+          />
+          <img
+            src="images/illustrations/sustainability.webp"
+            alt=""
+            loading="lazy"
+            class="h-56 w-72 bg-mist sm:h-72 sm:w-96 rounded-[32px] object-cover"
+          />
+          <img
+            src="images/foundation_images/IMG_1699.jpg"
+            alt=""
+            loading="lazy"
+            class="h-56 w-72 sm:h-72 sm:w-96 rounded-[32px] object-cover"
+          />
+          <img
+            src="images/illustrations/community-empowerment.webp"
+            alt=""
+            loading="lazy"
+            class="h-56 w-72 bg-mist sm:h-72 sm:w-96 rounded-[32px] object-cover"
+          />
+          <!-- duplicate set for a seamless loop -->
+          <img
+            src="images/foundation_images/IMG_1704.jpg"
+            alt=""
+            loading="lazy"
+            class="h-56 w-72 sm:h-72 sm:w-96 rounded-[32px] object-cover"
+            aria-hidden="true"
+          />
+          <img
+            src="images/illustrations/talent-sports.webp"
+            alt=""
+            loading="lazy"
+            class="h-56 w-72 bg-mist sm:h-72 sm:w-96 rounded-[32px] object-cover"
+            aria-hidden="true"
+          />
+          <img
+            src="images/foundation_images/IMG_1729.jpg"
+            alt=""
+            loading="lazy"
+            class="h-56 w-72 sm:h-72 sm:w-96 rounded-[32px] object-cover"
+            aria-hidden="true"
+          />
+          <img
+            src="images/illustrations/sustainability.webp"
+            alt=""
+            loading="lazy"
+            class="h-56 w-72 bg-mist sm:h-72 sm:w-96 rounded-[32px] object-cover"
+            aria-hidden="true"
+          />
+          <img
+            src="images/foundation_images/IMG_1699.jpg"
+            alt=""
+            loading="lazy"
+            class="h-56 w-72 sm:h-72 sm:w-96 rounded-[32px] object-cover"
+            aria-hidden="true"
+          />
+          <img
+            src="images/illustrations/community-empowerment.webp"
+            alt=""
+            loading="lazy"
+            class="h-56 w-72 bg-mist sm:h-72 sm:w-96 rounded-[32px] object-cover"
+            aria-hidden="true"
+          />
+        </div>
+      </section>
+
+      <!-- ============ GALLERY ============ -->
+      <section id="gallery" class="px-4 pb-20 md:px-8 lg:pb-32">
+        <div
+          class="mx-auto flex max-w-[1280px] flex-col gap-14 rounded-[32px] bg-mist p-6 sm:p-10 lg:p-[60px]"
+        >
+          <div
+            class="flex flex-col justify-between gap-6 lg:flex-row lg:items-end"
+          >
+            <div class="flex flex-col items-start gap-4">
+              <span
+                class="relative flex items-center rounded-full border border-line bg-white py-1 pl-11 pr-5 text-base font-medium text-ink"
+              >
+                <span
+                  class="absolute left-0 flex h-[35px] w-[35px] items-center justify-center rounded-full bg-sky"
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.24 8.25h4.48V24H.24V8.25zM8.4 8.25h4.3v2.15h.06c.6-1.13 2.06-2.32 4.24-2.32 4.53 0 5.37 2.98 5.37 6.86V24h-4.48v-6.99c0-1.67-.03-3.81-2.32-3.81-2.32 0-2.68 1.81-2.68 3.69V24H8.4V8.25z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  aria-label="Instagram"
-                  class="grid h-9 w-9 place-items-center rounded-full bg-white text-ink/70 transition hover:bg-brand hover:text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -385,1082 +1024,722 @@
                     stroke-linejoin="round"
                     aria-hidden="true"
                   >
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <circle cx="8.5" cy="8.5" r="1.5" />
+                    <polyline points="21 15 16 10 5 21" />
                   </svg>
-                </a>
-                <a
-                  href="#"
-                  aria-label="Twitter"
-                  class="grid h-9 w-9 place-items-center rounded-full bg-white text-ink/70 transition hover:bg-brand hover:text-white"
+                </span>
+                Gallery
+              </span>
+              <h2
+                class="text-3xl font-bold leading-[1.2] tracking-tightish text-ink sm:text-4xl lg:text-[54px]"
+              >
+                Nyuka Programme
+              </h2>
+            </div>
+            <p class="max-w-[440px]">
+              Moments from activities, learning sessions and community
+              engagements. Select an image to view it in full.
+            </p>
+          </div>
+
+          <div class="grid grid-flow-dense grid-cols-2 gap-4 md:grid-cols-4">
+            <button
+              class="gallery-item col-span-2 row-span-2 overflow-hidden rounded-3xl"
+              data-caption="Pupils gathered with the CM team in front of the Foundation banner"
+            >
+              <img
+                src="images/foundation_images/IMG_1825.jpg"
+                alt="Pupils gathered with the CM team in front of the Foundation banner"
+                loading="lazy"
+                class="h-full min-h-72 w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </button>
+            <button
+              class="gallery-item overflow-hidden rounded-3xl"
+              data-caption="Smiles all round with a CM team member"
+            >
+              <img
+                src="images/foundation_images/IMG_1726.jpg"
+                alt="Smiles all round with a CM team member"
+                loading="lazy"
+                class="aspect-square w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </button>
+            <button
+              class="gallery-item overflow-hidden rounded-3xl"
+              data-caption="Handing out essentials to children and parents"
+            >
+              <img
+                src="images/foundation_images/IMG_1682.jpg"
+                alt="Handing out essentials to children and parents"
+                loading="lazy"
+                class="aspect-square w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </button>
+            <button
+              class="gallery-item overflow-hidden rounded-3xl"
+              data-caption="Volunteers serving a shared meal"
+            >
+              <img
+                src="images/foundation_images/IMG_1705.jpg"
+                alt="Volunteers serving a shared meal"
+                loading="lazy"
+                class="aspect-square w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </button>
+            <button
+              class="gallery-item overflow-hidden rounded-3xl"
+              data-caption="Pupils huddled together on the field"
+            >
+              <img
+                src="images/foundation_images/IMG_1738.jpg"
+                alt="Pupils huddled together on the field"
+                loading="lazy"
+                class="aspect-square w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </button>
+            <button
+              class="gallery-item overflow-hidden rounded-3xl"
+              data-caption="Play time on the school field"
+            >
+              <img
+                src="images/foundation_images/IMG_1699.jpg"
+                alt="Play time on the school field"
+                loading="lazy"
+                class="aspect-square w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </button>
+            <button
+              class="gallery-item col-span-2 overflow-hidden rounded-3xl"
+              data-caption="The whole school together on community day"
+            >
+              <img
+                src="images/foundation_images/IMG_1709.jpg"
+                alt="The whole school together on community day"
+                loading="lazy"
+                class="aspect-[2/1] h-full w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </button>
+            <button
+              class="gallery-item overflow-hidden rounded-3xl"
+              data-caption="Time together with the pupils"
+            >
+              <img
+                src="images/foundation_images/IMG_1767.jpg"
+                alt="Time together with the pupils"
+                loading="lazy"
+                class="aspect-square w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </button>
+            <button
+              class="gallery-item overflow-hidden rounded-3xl"
+              data-caption="The CM team with pupils"
+            >
+              <img
+                src="images/foundation_images/IMG_1660.jpg"
+                alt="The CM team with pupils"
+                loading="lazy"
+                class="aspect-square w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ GET INVOLVED ============ -->
+      <section id="get-involved" class="px-4 pb-20 md:px-8 lg:pb-32">
+        <div class="mx-auto flex max-w-[1280px] flex-col items-center gap-14">
+          <div
+            class="flex max-w-[815px] flex-col items-center gap-4 text-center"
+          >
+            <span
+              class="relative flex items-center rounded-full border border-line py-1 pl-11 pr-5 text-base font-medium text-ink"
+            >
+              <span
+                class="absolute left-0 flex h-[35px] w-[35px] items-center justify-center rounded-full bg-coral text-white"
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M12 22v-6" />
+                  <path d="M12 2 5 12h4l-3 4h12l-3-4h4z" />
+                </svg>
+              </span>
+              Get Involved
+            </span>
+            <h2
+              class="max-w-[620px] text-3xl font-bold leading-[1.2] tracking-tightish text-ink sm:text-4xl lg:text-[54px]"
+            >
+              Change is something we build together
+            </h2>
+            <p class="max-w-[560px]">
+              Whether you bring time, expertise, resources or partnership, there
+              is a place for you in this work.
+            </p>
+          </div>
+
+          <!-- 1px gap over a line-colored background draws the inner grid borders at every breakpoint -->
+          <div
+            class="grid w-full gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4"
+          >
+            <div
+              class="flex flex-col items-center gap-8 bg-white p-8 text-center lg:p-10"
+            >
+              <span class="rounded-lg bg-leaf p-2">
+                <svg
+                  class="h-8 w-8 text-ink"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"
+                  />
+                </svg>
+              </span>
+              <div class="flex flex-col gap-2">
+                <p
+                  class="text-2xl font-semibold leading-[1.4] tracking-tightish text-ink"
+                >
+                  Volunteer With Us
+                </p>
+                <p class="text-base">
+                  Share your time, experience or professional skills.
+                </p>
+              </div>
+              <a
+                href="mailto:info@christophermsandofoundation.org?subject=Volunteer%20With%20CM"
+                class="mt-auto rounded-full border border-line px-8 py-3 text-base font-semibold text-ink transition hover:bg-ink hover:text-white"
+                >Start a conversation</a
+              >
+            </div>
+            <div
+              class="flex flex-col items-center gap-8 bg-white p-8 text-center lg:p-10"
+            >
+              <span class="rounded-lg bg-sun p-2">
+                <svg
+                  class="h-8 w-8 text-ink"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M21.2 15.9A10 10 0 1 1 8 2.8" />
+                  <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                </svg>
+              </span>
+              <div class="flex flex-col gap-2">
+                <p
+                  class="text-2xl font-semibold leading-[1.4] tracking-tightish text-ink"
+                >
+                  Support Our Programmes
+                </p>
+                <p class="text-base">
+                  Help resources reach activities with meaningful impact.
+                </p>
+              </div>
+              <a
+                href="mailto:info@christophermsandofoundation.org?subject=Support%20CM%20Programmes"
+                class="mt-auto rounded-full border border-line px-8 py-3 text-base font-semibold text-ink transition hover:bg-ink hover:text-white"
+                >Offer support</a
+              >
+            </div>
+            <div
+              class="flex flex-col items-center gap-8 bg-white p-8 text-center lg:p-10"
+            >
+              <span class="rounded-lg bg-sky p-2">
+                <svg
+                  class="h-8 w-8 text-ink"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M20 7h-9" />
+                  <path d="M14 17H5" />
+                  <circle cx="17" cy="17" r="3" />
+                  <circle cx="7" cy="7" r="3" />
+                </svg>
+              </span>
+              <div class="flex flex-col gap-2">
+                <p
+                  class="text-2xl font-semibold leading-[1.4] tracking-tightish text-ink"
+                >
+                  Partner With CM
+                </p>
+                <p class="text-base">
+                  Explore collaboration as an institution, business or community
+                  group.
+                </p>
+              </div>
+              <a
+                href="mailto:info@christophermsandofoundation.org?subject=Partnership%20With%20CM"
+                class="mt-auto rounded-full border border-line px-8 py-3 text-base font-semibold text-ink transition hover:bg-ink hover:text-white"
+                >Explore partnership</a
+              >
+            </div>
+            <div
+              class="flex flex-col items-center gap-8 bg-white p-8 text-center lg:p-10"
+            >
+              <span class="rounded-lg bg-coral p-2">
+                <svg
+                  class="h-8 w-8 text-white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                  />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 0 1-8 0" />
+                </svg>
+              </span>
+              <div class="flex flex-col gap-2">
+                <p
+                  class="text-2xl font-semibold leading-[1.4] tracking-tightish text-ink"
+                >
+                  Shop at Our Store
+                </p>
+                <p class="text-base">
+                  Discover CM items and support the Foundation through every
+                  purchase.
+                </p>
+              </div>
+              <!-- TODO: replace with the real online store URL -->
+              <a
+                href="mailto:info@christophermsandofoundation.org?subject=CM%20Online%20Store%20Enquiry"
+                class="mt-auto rounded-full border border-line px-8 py-3 text-base font-semibold text-ink transition hover:bg-ink hover:text-white"
+                >Request the store link</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STAY IN TOUCH (CTA block) ============ -->
+      <section id="stay-in-touch" class="px-4 md:px-8">
+        <div
+          class="relative mx-auto flex max-w-[1280px] flex-col items-center overflow-hidden rounded-[32px] bg-coral px-6 pt-14 sm:px-14 lg:pt-20"
+        >
+          <div
+            class="relative z-[2] flex w-full max-w-[680px] flex-col items-center gap-10 text-center"
+          >
+            <div class="flex flex-col items-center gap-3 text-white">
+              <span
+                class="rounded-full bg-white px-3 py-0.5 text-base font-medium text-ink"
+                >Stay in Touch With Us</span
+              >
+              <h2
+                class="text-3xl font-bold leading-[1.2] tracking-tightish sm:text-4xl lg:text-[54px]"
+              >
+                Keep close to the work
+              </h2>
+              <p class="text-white/90">
+                Stay connected with CM and be the first to hear about our
+                programmes, upcoming activities, community initiatives,
+                opportunities and the impact we are creating together.
+              </p>
+            </div>
+            <!-- TODO: move to a mailing-list provider (Mailchimp, Brevo, etc.) for consent & unsubscribe handling -->
+            <form
+              id="subscribe-form"
+              action="https://formsubmit.co/info@christophermsandofoundation.org"
+              method="POST"
+              class="flex w-full flex-col gap-4"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="New CM website subscriber"
+              />
+              <div class="relative flex w-full items-center">
+                <label for="email" class="sr-only">Email address</label>
+                <span
+                  class="absolute inset-y-1.5 left-1.5 flex items-center justify-center rounded-full bg-mist px-2.5 text-ink"
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4"
+                    class="h-5 w-5"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                     aria-hidden="true"
                   >
                     <path
-                      d="M23 4.9c-.8.35-1.7.6-2.6.7a4.5 4.5 0 0 0 2-2.5c-.9.5-1.9.9-2.9 1.1a4.5 4.5 0 0 0-7.7 4.1A12.8 12.8 0 0 1 1.6 3.6a4.5 4.5 0 0 0 1.4 6 4.4 4.4 0 0 1-2-.6v.1a4.5 4.5 0 0 0 3.6 4.4 4.5 4.5 0 0 1-2 .1 4.5 4.5 0 0 0 4.2 3.1A9 9 0 0 1 1 18.6a12.8 12.8 0 0 0 6.9 2c8.3 0 12.8-6.9 12.8-12.8v-.6c.9-.6 1.6-1.4 2.3-2.3z"
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
                     />
+                    <polyline points="22,6 12,13 2,6" />
                   </svg>
-                </a>
+                </span>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                  placeholder="Your email address"
+                  class="w-full rounded-full bg-white py-3.5 pl-14 pr-36 text-base text-ink placeholder:text-body focus:outline-none focus:ring-2 focus:ring-sun"
+                />
+                <button
+                  type="submit"
+                  class="absolute inset-y-0 right-0 rounded-full bg-ink px-6 text-base font-semibold text-white transition hover:bg-night"
+                >
+                  Subscribe
+                </button>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="relative">
-          <div
-            data-hero-slider
-            class="group relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-2xl shadow-ink/10"
-          >
-            <img
-              src="images/foundation_images/IMG_1726.jpg"
-              alt="Foundation volunteer smiling with children during a community outreach event"
-              class="absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity duration-1000 ease-in-out"
-              fetchpriority="high"
-            />
-            <img
-              src="images/foundation_images/IMG_1706.jpg"
-              alt="Foundation volunteers and schoolchildren gathered together during an outreach event"
-              class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-1000 ease-in-out"
-              loading="lazy"
-            />
-            <img
-              src="images/foundation_images/IMG_1657.jpg"
-              alt="Foundation team distributing supplies to students and parents"
-              class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-1000 ease-in-out"
-              loading="lazy"
-            />
-            <img
-              src="images/foundation_images/IMG_1767.jpg"
-              alt="Foundation volunteer kneeling with a smiling group of schoolchildren"
-              class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-1000 ease-in-out"
-              loading="lazy"
-            />
-            <img
-              src="images/foundation_images/IMG_1738.jpg"
-              alt="Foundation mentor engaging a circle of schoolchildren in an activity"
-              class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-1000 ease-in-out"
-              loading="lazy"
-            />
-            <img
-              src="images/foundation_images/IMG_1825.jpg"
-              alt="Foundation team and students posing together at an outreach event"
-              class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-1000 ease-in-out"
-              loading="lazy"
-            />
-
-            <!-- Slide navigation dots -->
-            <div
-              data-hero-dots
-              class="absolute inset-x-0 bottom-4 z-10 flex items-center justify-center gap-2"
-            ></div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- ================= LOGO / COMMITMENT ================= -->
-    <section class="bg-ink py-24 text-white">
-      <div class="container-la grid gap-14 lg:grid-cols-2">
-        <div>
-          <h3 class="text-3xl font-bold sm:text-4xl">
-            Who was Christopher Msando
-          </h3>
-          <ul class="mt-8 space-y-4">
-            <li class="flex items-start gap-3">
-              <span
-                class="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-brand text-white"
+              <label
+                class="flex items-start gap-3 text-left text-sm text-white/90"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-3.5 w-3.5"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
+                <input
+                  name="consent"
+                  type="checkbox"
+                  required
+                  class="mt-1 h-4 w-4 shrink-0 accent-ink"
+                />
+                <span
+                  >I agree to receive CM news and updates. My email will only be
+                  used for this purpose, and I can unsubscribe at any
+                  time.</span
                 >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <p class="text-white/70">
-                Christopher Msando was the ICT Manager at the Independent
-                Electoral and Boundaries Commission (IEBC) at the time of his
-                demise on 28th July 2017.
-              </p>
-            </li>
-            <li class="flex items-start gap-3">
-              <span
-                class="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-brand text-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-3.5 w-3.5"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </span>
-              <p class="text-white/70">
-                A hardworking man — keen on detail, resilient, honest, decisive,
-                loving and empathetic. The Foundation was established in his
-                honor and legacy.
-              </p>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Partner logos: simple text/glyph marks in place of the original SVG logos -->
-        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
-          <div
-            class="grid h-24 place-items-center rounded-2xl bg-white/5 text-lg font-bold text-white/80 ring-1 ring-white/10"
-          >
-            Mentorship
+              </label>
+              <p
+                id="form-status"
+                class="hidden rounded-xl bg-white/15 p-3 text-sm font-semibold text-white"
+                role="status"
+              ></p>
+            </form>
           </div>
-          <div
-            class="grid h-24 place-items-center rounded-2xl bg-white/5 text-lg font-bold text-white/80 ring-1 ring-white/10"
-          >
-            ICT Training
-          </div>
-          <div
-            class="grid h-24 place-items-center rounded-2xl bg-white/5 text-lg font-bold text-white/80 ring-1 ring-white/10"
-          >
-            Volunteering
-          </div>
-          <div
-            class="grid h-24 place-items-center rounded-2xl bg-white/5 text-lg font-bold text-white/80 ring-1 ring-white/10"
-          >
-            Innovation
-          </div>
-          <div
-            class="grid h-24 place-items-center rounded-2xl bg-white/5 text-lg font-bold text-white/80 ring-1 ring-white/10"
-          >
-            Culture
-          </div>
-          <div
-            class="grid h-24 place-items-center rounded-2xl bg-white/5 text-lg font-bold text-white/80 ring-1 ring-white/10"
-          >
-            Community
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= FEATURES / RESULTS ================= -->
-    <section id="features" class="bg-smoke py-24">
-      <div class="container-la grid gap-14 lg:grid-cols-2 lg:items-center">
-        <div>
-          <p class="eyebrow">Our Objectives</p>
-          <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl lg:text-5xl">
-            Skills that <span class="text-brand">change lives</span>
-          </h2>
-          <p class="mt-5 max-w-lg text-ink/70">
-            We help increase the quality of life of youth and children with
-            little to no access to technology — growing their talents and
-            passions and nurturing them in character and purpose.
-          </p>
-
-          <figure
-            class="mt-8 flex items-center gap-4 border-t border-ink/10 pt-6"
-          >
-            <img
-              src="images/foundation_images/IMG_1661.jpg"
-              loading="lazy"
-              alt="Christopher Msando Foundation"
-              class="h-16 w-16 rounded-full object-cover"
-            />
-            <figcaption>
-              <blockquote class="font-medium">
-                “To inspire the youth and enrich their ICT knowledge and skills
-                for a lasting impact in their lives.”
-              </blockquote>
-              <p class="mt-1 text-sm text-ink/60">
-                <span class="font-semibold text-ink">Our Mission</span> ·
-                Christopher Msando Foundation
-              </p>
-            </figcaption>
-          </figure>
-        </div>
-
-        <div class="grid gap-5 sm:grid-cols-2">
-          <!-- Stat cards -->
-          <div class="rounded-2xl bg-white p-7 shadow-sm shadow-ink/5">
-            <div
-              class="grid h-12 w-12 place-items-center rounded-xl bg-brand/10 text-brand"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M3 21h18M6 21V9l6-6 6 6v12M9 21v-6h6v6" />
-              </svg>
-            </div>
-            <h5 class="mt-5 text-lg font-bold">Youth Mentorship Programs</h5>
-            <p class="mt-2 text-sm text-ink/60">
-              Growing skilled professionals and capable young leaders full of
-              character — nurturing peace, leadership and personal finance
-              management.
-            </p>
-          </div>
-          <div class="rounded-2xl bg-white p-7 shadow-sm shadow-ink/5">
-            <div
-              class="grid h-12 w-12 place-items-center rounded-xl bg-brand/10 text-brand"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <line x1="12" y1="1" x2="12" y2="23" />
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-              </svg>
-            </div>
-            <h5 class="mt-5 text-lg font-bold">Volunteer's Day</h5>
-            <p class="mt-2 text-sm text-ink/60">
-              An environment where volunteers grow too — sharing life
-              experiences and skills with young, less advantaged children and
-              youth.
-            </p>
-          </div>
-          <div class="rounded-2xl bg-white p-7 shadow-sm shadow-ink/5">
-            <div
-              class="grid h-12 w-12 place-items-center rounded-xl bg-brand/10 text-brand"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                <polyline points="9 22 9 12 15 12 15 22" />
-              </svg>
-            </div>
-            <h5 class="mt-5 text-lg font-bold">ICT Training</h5>
-            <p class="mt-2 text-sm text-ink/60">
-              An ICT Centre that trains youth and children with little access to
-              technology in skills that greatly improve their quality of life.
-            </p>
-          </div>
-          <div class="rounded-2xl bg-white p-7 shadow-sm shadow-ink/5">
-            <div
-              class="grid h-12 w-12 place-items-center rounded-xl bg-brand/10 text-brand"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                <path d="M6 12v5c3 3 9 3 12 0v-5" />
-              </svg>
-            </div>
-            <h5 class="mt-5 text-lg font-bold">Cultural Exhibitions</h5>
-            <p class="mt-2 text-sm text-ink/60">
-              Spaces where young people tell African stories and review Kenyan
-              history — breeding inspiration and belief in their ability to do
-              great things.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= VIDEO CTA ================= -->
-    <section class="bg-white py-24">
-      <div class="container-la text-center">
-        <p class="eyebrow">Our Mission</p>
-        <h2
-          class="mx-auto mt-4 max-w-3xl text-3xl font-extrabold sm:text-4xl lg:text-5xl"
-        >
-          To inspire the youth and enrich their ICT knowledge and skills.
-        </h2>
-        <p class="mx-auto mt-5 max-w-2xl text-ink/70">
-          Our vision is to offer capacity building services in Information
-          Communication Technology, provide a platform for innovation, nurture
-          the youth and equip the less advantaged in ICT.
-        </p>
-        <div class="mt-8 flex justify-center">
-          <a href="#newsletter" class="btn-primary">
-            Support Our Mission
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </a>
-        </div>
-
-        <!-- Video thumbnail → links out to YouTube -->
-        <a
-          href="https://www.youtube.com/watch?v=I8V0cWNssHw"
-          target="_blank"
-          rel="noopener"
-          class="group relative mx-auto mt-14 block max-w-4xl overflow-hidden rounded-3xl shadow-2xl shadow-ink/10"
-        >
           <img
-            src="images/foundation_images/IMG_1709.jpg"
-            alt="Foundation volunteers and school children gathered during a community program"
+            src="images/illustrations/community-hero.webp"
+            alt="Pencil illustration of African youth learning, playing football, mentoring and planting a tree"
             loading="lazy"
-            class="aspect-video w-full object-cover transition duration-500 group-hover:scale-105"
+            class="relative z-[1] -mb-px mt-12 aspect-[5/2] w-full max-w-[905px] rounded-t-[48px] bg-white object-cover"
           />
-          <span class="absolute inset-0 grid place-items-center bg-ink/25">
-            <span
-              class="grid h-20 w-20 place-items-center rounded-full bg-white/95 text-brand shadow-lg transition group-hover:scale-110"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="ml-1 h-8 w-8"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <polygon points="5 3 19 12 5 21 5 3" />
-              </svg>
-            </span>
-          </span>
-        </a>
-      </div>
-    </section>
-
-    <!-- ================= IMPACT CHECKMARKS ================= -->
-    <section class="bg-cream py-20">
-      <div class="container-la grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <div
-          class="flex items-center gap-3 rounded-2xl bg-white p-5 shadow-sm shadow-ink/5"
-        >
-          <span
-            class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand text-white"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" /></svg
-          ></span>
-          <p class="font-medium">Youth mentorship &amp; leadership</p>
-        </div>
-        <div
-          class="flex items-center gap-3 rounded-2xl bg-white p-5 shadow-sm shadow-ink/5"
-        >
-          <span
-            class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand text-white"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" /></svg
-          ></span>
-          <p class="font-medium">ICT skills training</p>
-        </div>
-        <div
-          class="flex items-center gap-3 rounded-2xl bg-white p-5 shadow-sm shadow-ink/5"
-        >
-          <span
-            class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand text-white"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" /></svg
-          ></span>
-          <p class="font-medium">Volunteer engagement</p>
-        </div>
-        <div
-          class="flex items-center gap-3 rounded-2xl bg-white p-5 shadow-sm shadow-ink/5"
-        >
-          <span
-            class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand text-white"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" /></svg
-          ></span>
-          <p class="font-medium">Cultural exhibitions</p>
-        </div>
-        <div
-          class="flex items-center gap-3 rounded-2xl bg-white p-5 shadow-sm shadow-ink/5"
-        >
-          <span
-            class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand text-white"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" /></svg
-          ></span>
-          <p class="font-medium">Innovation platforms</p>
-        </div>
-        <div
-          class="flex items-center gap-3 rounded-2xl bg-white p-5 shadow-sm shadow-ink/5"
-        >
-          <span
-            class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand text-white"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <polyline points="20 6 9 17 4 12" /></svg
-          ></span>
-          <p class="font-medium">Community building</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PROJECTS (was a JS slider → responsive grid) ================= -->
-    <section id="projects" class="bg-ink py-24 text-white">
-      <div class="container-la text-center">
-        <p class="eyebrow">Programs &amp; Initiatives</p>
-        <h2
-          class="mx-auto mt-4 max-w-3xl text-3xl font-extrabold sm:text-4xl lg:text-5xl"
-        >
-          Take a look at our programs
-        </h2>
-        <p class="mx-auto mt-5 max-w-2xl text-white/70">
-          We encourage the youth into ICT and better innovation platforms,
-          bringing a common bonding cause and advancing the causes Christopher
-          Msando believed in.
-        </p>
-      </div>
-
-      <div id="projects-grid" class="container-la mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <!-- Project cards are rendered from data.js by site.js -->
-        <!-- CTA card -->
-        <div
-          id="projects-cta"
-          class="grid place-items-center rounded-3xl bg-brand p-8 text-center"
-        >
-          <div>
-            <h4 class="text-2xl font-bold">Ready to make an impact?</h4>
-            <p class="mt-3 text-white/80">
-              Your support helps us identify needy beneficiaries and hone their
-              potential to become the next change makers in the country.
-            </p>
-            <a
-              href="#newsletter"
-              class="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-4 font-semibold text-ink transition hover:gap-3"
-            >
-              Support Our Mission
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <polyline points="12 5 19 12 12 19" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= TESTIMONIALS + PRODUCT CTA ================= -->
-    <section class="bg-smoke py-24">
-      <div class="container-la text-center">
-        <p class="eyebrow">About the Foundation</p>
-        <h2
-          class="mx-auto mt-4 max-w-3xl text-3xl font-extrabold sm:text-4xl lg:text-5xl"
-        >
-          Who we are and who we serve
-        </h2>
-        <p class="mx-auto mt-5 max-w-2xl text-ink/70">
-          The Christopher Msando Foundation was established in his honor and
-          legacy, to advance the causes he believed in and encourage the youth
-          into ICT.
-        </p>
-      </div>
-
-      <div class="container-la mt-14 grid gap-6 md:grid-cols-3">
-        <!-- Card -->
-        <figure class="rounded-3xl bg-white p-8 shadow-sm shadow-ink/5">
-          <img
-            src="images/foundation_images/IMG_1660.jpg"
-            loading="lazy"
-            alt="School children reached by the Foundation"
-            class="h-16 w-16 rounded-full object-cover"
-          />
-          <div class="mt-5 font-bold">The Beneficiaries</div>
-          <p class="mt-1 text-sm text-ink/60">
-            <span class="font-semibold text-ink">Youth &amp; Children</span> ·
-            Underserved communities
-          </p>
-          <blockquote class="mt-5 text-ink/70">
-            “We provide exposure and skills to youth and children with little to
-            no access to technology — helping increase their quality of life and
-            grow their talents and passions.”
-          </blockquote>
-          <div class="mt-6 flex gap-1 text-brand" aria-label="5 out of 5 stars">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-          </div>
-        </figure>
-
-        <figure class="rounded-3xl bg-white p-8 shadow-sm shadow-ink/5">
-          <img
-            src="images/foundation_images/IMG_1728.jpg"
-            loading="lazy"
-            alt="Foundation partner support being presented during outreach"
-            class="h-16 w-16 rounded-full object-cover"
-          />
-          <div class="mt-5 font-bold">The CMF Investor</div>
-          <p class="mt-1 text-sm text-ink/60">
-            <span class="font-semibold text-ink">Partners</span> · Donors &amp;
-            supporters
-          </p>
-          <blockquote class="mt-5 text-ink/70">
-            “One interested in making an impact on young people in underserved
-            communities — promoting innovation, creativity and learning
-            opportunities to those with less access to it.”
-          </blockquote>
-          <div class="mt-6 flex gap-1 text-brand" aria-label="5 out of 5 stars">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-          </div>
-        </figure>
-
-        <figure class="rounded-3xl bg-white p-8 shadow-sm shadow-ink/5">
-          <img
-            src="images/foundation_images/IMG_1657.jpg"
-            loading="lazy"
-            alt="Community engagement inspired by Christopher Msando's legacy"
-            class="h-16 w-16 rounded-full object-cover"
-          />
-          <div class="mt-5 font-bold">Our Purpose</div>
-          <p class="mt-1 text-sm text-ink/60">
-            <span class="font-semibold text-ink">Legacy</span> · Christopher
-            Msando
-          </p>
-          <blockquote class="mt-5 text-ink/70">
-            “To advance the causes he believed in, encourage the youth into ICT
-            and better innovation platforms, and bring a common bonding cause.”
-          </blockquote>
-          <div class="mt-6 flex gap-1 text-brand" aria-label="5 out of 5 stars">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-          </div>
-        </figure>
-      </div>
-
-      <!-- Product CTA banner -->
-      <div class="container-la mt-16">
-        <div
-          class="grid overflow-hidden rounded-3xl bg-ink text-white lg:grid-cols-2"
-        >
-          <img
-            src="images/foundation_images/IMG_1682.jpg"
-            loading="lazy"
-            alt="Foundation team and beneficiaries gathered in honor of Christopher Msando's legacy"
-            class="h-full w-full object-cover"
-          />
-          <div class="p-10 lg:p-14">
-            <p class="eyebrow">Why the Foundation</p>
-            <h3 class="mt-4 text-3xl font-bold sm:text-4xl">
-              Established in his <span class="text-brand">honor and legacy</span>
-            </h3>
-            <p class="mt-5 text-white/70">
-              Christopher Msando was keen on detail, resilient, honest, decisive
-              and empathetic — that is why he excelled in what he did. The
-              Foundation carries that spirit forward for the next generation.
-            </p>
-            <a href="#newsletter" class="btn-primary mt-8">
-              Support Our Mission
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <polyline points="12 5 19 12 12 19" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= BLOG + NEWSLETTER ================= -->
-    <section id="blog" class="bg-white py-24">
-      <div class="container-la flex flex-wrap items-end justify-between gap-6">
-        <h3 class="max-w-md text-3xl font-extrabold sm:text-4xl">
-          Our latest stories &amp; updates
-        </h3>
-        <a href="#" class="btn-primary">
-          View all Articles
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+          <div
+            class="absolute -bottom-[70%] left-1/2 h-[582px] w-[927px] -translate-x-1/2 rounded-full bg-white/10"
             aria-hidden="true"
-          >
-            <circle cx="12" cy="12" r="10" />
-            <polyline points="12 16 16 12 12 8" />
-            <line x1="8" y1="12" x2="16" y2="12" />
-          </svg>
-        </a>
-      </div>
+          ></div>
+        </div>
+      </section>
 
-      <div id="stories-grid" class="container-la mt-12 grid gap-8 md:grid-cols-3">
-        <!-- Story cards are rendered from data.js by site.js -->
-      </div>
-
-      <!-- Newsletter -->
-      <div id="newsletter" class="container-la mt-20">
+      <!-- ============ FAQ (native <details>, no JS) ============ -->
+      <section class="px-4 pt-20 md:px-8 lg:pt-32">
         <div
-          class="grid items-center gap-8 rounded-3xl bg-cream p-10 lg:grid-cols-2 lg:p-14"
+          class="mx-auto flex max-w-[1280px] flex-col gap-14 rounded-[32px] bg-gradient-to-b from-mist to-mist/0 p-6 sm:p-10 lg:p-[60px]"
         >
-          <div>
-            <h4 class="text-2xl font-bold sm:text-3xl">
-              Subscribe to our newsletter
-            </h4>
-            <p class="mt-4 text-ink/70">
-              Join us and support the efforts to inspire the youth and equip the
-              less advantaged in ICT for a lasting impact.
+          <div
+            class="flex w-full flex-col justify-between gap-8 lg:flex-row lg:items-center"
+          >
+            <div class="flex max-w-[400px] flex-col items-start gap-4">
+              <span
+                class="relative flex items-center rounded-full border border-line bg-white py-1 pl-11 pr-5 text-base font-medium text-ink"
+              >
+                <span
+                  class="absolute left-0 flex h-[35px] w-[35px] items-center justify-center rounded-full bg-leaf"
+                >
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3" />
+                    <line x1="12" y1="17" x2="12.01" y2="17" />
+                  </svg>
+                </span>
+                Questions Answered
+              </span>
+              <h2
+                class="text-3xl font-bold leading-[1.2] tracking-tightish text-ink sm:text-4xl lg:text-[54px]"
+              >
+                Frequently asked questions
+              </h2>
+            </div>
+            <div class="flex max-w-[480px] flex-col items-start gap-6">
+              <p>
+                Quick answers about how to support the Foundation. For anything
+                else, our team is happy to help.
+              </p>
+              <a
+                href="mailto:info@christophermsandofoundation.org"
+                class="rounded-full bg-ink px-10 py-3 text-base font-semibold text-white transition hover:bg-coral"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <details class="group rounded-3xl bg-sun p-6" open>
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-ink [&::-webkit-details-marker]:hidden"
+              >
+                How can I donate to the Christopher Msando Foundation?
+                <span
+                  class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white transition group-open:rotate-45"
+                  ><svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    aria-hidden="true"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" /></svg
+                ></span>
+              </summary>
+              <p class="pt-2 leading-[1.5] text-ink/80 md:w-3/5">
+                We accept support via bank transfer, M-Pesa and PayPal. Email
+                info@christophermsandofoundation.org and we will share the
+                details for your preferred option.
+              </p>
+            </details>
+            <details class="group rounded-3xl bg-sun p-6">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-ink [&::-webkit-details-marker]:hidden"
+              >
+                Can I volunteer my time or professional skills?
+                <span
+                  class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white transition group-open:rotate-45"
+                  ><svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    aria-hidden="true"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" /></svg
+                ></span>
+              </summary>
+              <p class="pt-2 leading-[1.5] text-ink/80 md:w-3/5">
+                Yes. Volunteers share life experiences and skills with children
+                and youth, and grow through the work too. Get in touch through
+                the Get Involved section to start a conversation.
+              </p>
+            </details>
+            <details class="group rounded-3xl bg-sun p-6">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-ink [&::-webkit-details-marker]:hidden"
+              >
+                Are partnership or sponsorship opportunities available?
+                <span
+                  class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white transition group-open:rotate-45"
+                  ><svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    aria-hidden="true"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" /></svg
+                ></span>
+              </summary>
+              <p class="pt-2 leading-[1.5] text-ink/80 md:w-3/5">
+                We welcome collaboration with institutions, businesses and
+                community groups, including corporate support. Reach out and we
+                will explore what fits best.
+              </p>
+            </details>
+            <details class="group rounded-3xl bg-sun p-6">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-ink [&::-webkit-details-marker]:hidden"
+              >
+                Can I give in honour of someone or as a gift?
+                <span
+                  class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white transition group-open:rotate-45"
+                  ><svg
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    aria-hidden="true"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" /></svg
+                ></span>
+              </summary>
+              <p class="pt-2 leading-[1.5] text-ink/80 md:w-3/5">
+                Please contact us with the details and we will help you arrange
+                a gift made in someone's name.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="px-4 pb-16 pt-20 md:px-8 lg:pt-32">
+      <div class="mx-auto flex max-w-[1280px] flex-col gap-16">
+        <div class="flex flex-col justify-between gap-14 lg:flex-row">
+          <div class="flex max-w-[380px] flex-col gap-6">
+            <a
+              href="#home"
+              class="self-start rounded-2xl bg-white p-2 shadow-sm"
+              aria-label="Christopher Msando Foundation home"
+            >
+              <img src="images/logo.png" alt="" class="h-9 w-auto" />
+            </a>
+            <p class="text-lg sm:text-xl">
+              Nurturing talent, strengthening communities and building
+              sustainable pathways to self-reliance.
             </p>
           </div>
-          <form method="get" action="#" class="flex flex-col gap-3 sm:flex-row">
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Enter your email"
-              class="w-full rounded-full border border-ink/15 bg-white px-6 py-4 text-ink outline-none focus:border-brand"
-            />
-            <button type="submit" class="btn-primary shrink-0">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= FOOTER ================= -->
-    <footer id="footer" class="bg-ink text-white">
-      <div
-        class="container-la grid gap-12 py-20 lg:grid-cols-[1.5fr_1fr_1fr_1fr]"
-      >
-        <div>
-          <a href="#" class="flex items-center">
-            <span class="inline-flex items-center rounded-xl bg-white px-3 py-2">
-              <img
-                src="images/logo.png"
-                alt="Christopher Msando Foundation"
-                class="h-9 w-auto"
-              />
-            </span>
-          </a>
-          <p class="mt-6 max-w-sm text-white/60">
-            Offering capacity building services in Information Communication
-            Technology and a platform for innovation —
-            <span class="text-brand">nurturing the youth</span>
-            and equipping the less advantaged in ICT.
-          </p>
-          <div class="mt-6 flex items-center gap-3">
-            <a
-              href="#"
-              aria-label="Facebook"
-              class="grid h-9 w-9 place-items-center rounded-full bg-white/5 text-white/70 ring-1 ring-white/10 transition hover:bg-brand hover:text-white"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
+          <nav
+            class="grid grid-cols-2 gap-10 sm:flex sm:gap-14"
+            aria-label="Footer"
+          >
+            <div class="flex flex-col gap-4">
+              <p class="text-lg font-medium text-ink">Explore</p>
+              <a href="#about" class="transition hover:text-coral">About Us</a>
+              <a href="#objectives" class="transition hover:text-coral"
+                >Our Objectives</a
               >
-                <path
-                  d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"
-                />
-              </svg>
-            </a>
-            <a
-              href="#"
-              aria-label="LinkedIn"
-              class="grid h-9 w-9 place-items-center rounded-full bg-white/5 text-white/70 ring-1 ring-white/10 transition hover:bg-brand hover:text-white"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
+              <a href="#programmes" class="transition hover:text-coral"
+                >Programmes</a
               >
-                <path
-                  d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.24 8.25h4.48V24H.24V8.25zM8.4 8.25h4.3v2.15h.06c.6-1.13 2.06-2.32 4.24-2.32 4.53 0 5.37 2.98 5.37 6.86V24h-4.48v-6.99c0-1.67-.03-3.81-2.32-3.81-2.32 0-2.68 1.81-2.68 3.69V24H8.4V8.25z"
-                />
-              </svg>
-            </a>
-            <a
-              href="#"
-              aria-label="Instagram"
-              class="grid h-9 w-9 place-items-center rounded-full bg-white/5 text-white/70 ring-1 ring-white/10 transition hover:bg-brand hover:text-white"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
+              <a href="#gallery" class="transition hover:text-coral">Gallery</a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <p class="text-lg font-medium text-ink">Connect</p>
+              <a href="#get-involved" class="transition hover:text-coral"
+                >Get Involved</a
               >
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-              </svg>
-            </a>
-            <a
-              href="#"
-              aria-label="Twitter"
-              class="grid h-9 w-9 place-items-center rounded-full bg-white/5 text-white/70 ring-1 ring-white/10 transition hover:bg-brand hover:text-white"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
+              <a href="#stay-in-touch" class="transition hover:text-coral"
+                >Stay in Touch</a
               >
-                <path
-                  d="M23 4.9c-.8.35-1.7.6-2.6.7a4.5 4.5 0 0 0 2-2.5c-.9.5-1.9.9-2.9 1.1a4.5 4.5 0 0 0-7.7 4.1A12.8 12.8 0 0 1 1.6 3.6a4.5 4.5 0 0 0 1.4 6 4.4 4.4 0 0 1-2-.6v.1a4.5 4.5 0 0 0 3.6 4.4 4.5 4.5 0 0 1-2 .1 4.5 4.5 0 0 0 4.2 3.1A9 9 0 0 1 1 18.6a12.8 12.8 0 0 0 6.9 2c8.3 0 12.8-6.9 12.8-12.8v-.6c.9-.6 1.6-1.4 2.3-2.3z"
-                />
-              </svg>
-            </a>
-          </div>
+              <a
+                href="mailto:info@christophermsandofoundation.org"
+                class="break-all transition hover:text-coral"
+                >info@christophermsandofoundation.org</a
+              >
+            </div>
+          </nav>
         </div>
 
-        <div>
-          <h5 class="text-sm font-bold uppercase tracking-wide text-white/50">
-            Navigation
-          </h5>
-          <ul class="mt-6 space-y-3 text-white/70">
-            <li><a href="#" class="hover:text-brand">Home</a></li>
-            <li><a href="#features" class="hover:text-brand">About Us</a></li>
-            <li><a href="#projects" class="hover:text-brand">Programs</a></li>
-            <li><a href="#newsletter" class="hover:text-brand">Get Involved</a></li>
-            <li><a href="#blog" class="hover:text-brand">Blog</a></li>
-            <li><a href="#footer" class="hover:text-brand">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h5 class="text-sm font-bold uppercase tracking-wide text-white/50">
-            Programs
-          </h5>
-          <ul class="mt-6 space-y-3 text-white/70">
-            <li><a href="#projects" class="hover:text-brand">Youth Mentorship</a></li>
-            <li><a href="#projects" class="hover:text-brand">Volunteer's Day</a></li>
-            <li><a href="#projects" class="hover:text-brand">ICT Training</a></li>
-            <li><a href="#projects" class="hover:text-brand">Cultural Exhibitions</a></li>
-            <li><a href="#projects" class="hover:text-brand">ICT Centre</a></li>
-            <li><a href="#features" class="hover:text-brand">Our Objectives</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h5 class="text-sm font-bold uppercase tracking-wide text-white/50">
-            Get Involved
-          </h5>
-          <ul class="mt-6 space-y-3 text-white/70">
-            <li><a href="#newsletter" class="hover:text-brand">Donate via Bank</a></li>
-            <li><a href="#newsletter" class="hover:text-brand">Donate via M-Pesa</a></li>
-            <li><a href="#newsletter" class="hover:text-brand">Donate via PayPal</a></li>
-            <li><a href="#projects" class="hover:text-brand">Volunteer</a></li>
-            <li><a href="#blog" class="hover:text-brand">FAQ</a></li>
-            <li><a href="#footer" class="hover:text-brand">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="border-t border-white/10">
         <div
-          class="container-la flex flex-col items-center justify-between gap-2 py-6 text-sm text-white/50 sm:flex-row"
+          class="flex flex-col justify-between gap-4 border-t border-ink/10 pt-8 text-base sm:flex-row sm:items-center"
         >
-          <div>
-            Christopher Msando Foundation
-          </div>
-          <div>
-            Rebuilt with
-            <a
-              href="https://tailwindcss.com"
-              target="_blank"
-              rel="noopener"
-              class="text-white/80 hover:text-brand"
-              >Tailwind CSS</a
-            >
-          </div>
+          <p>© <span id="year">2026</span> Christopher Msando Foundation.</p>
+          <p class="font-medium text-ink">
+            Opportunity · Dignity · Self-reliance
+          </p>
         </div>
       </div>
     </footer>
-    <!-- Dynamic content: projects & stories -->
-    <script src="https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.min.js"></script>
-    <script src="data.js"></script>
-    <script src="site.js"></script>
+
+    <!-- Gallery lightbox -->
+    <dialog
+      id="lightbox"
+      class="m-auto w-[min(94vw,1000px)] rounded-3xl bg-ink p-3 text-white backdrop:bg-ink/90"
+    >
+      <button
+        id="lightbox-close"
+        class="absolute right-5 top-5 z-10 rounded-full bg-white p-2 text-ink"
+        aria-label="Close image"
+      >
+        <svg
+          class="h-5 w-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-width="2"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <img
+        id="lightbox-image"
+        src=""
+        alt=""
+        class="max-h-[78vh] w-full rounded-2xl object-contain"
+      />
+      <p
+        id="lightbox-caption"
+        class="px-3 py-4 text-center text-sm text-white/70"
+      ></p>
+    </dialog>
+
+    <script>
+      const lightbox = document.getElementById("lightbox"),
+        lightboxImage = document.getElementById("lightbox-image"),
+        lightboxCaption = document.getElementById("lightbox-caption");
+      document.querySelectorAll(".gallery-item").forEach((button) =>
+        button.addEventListener("click", () => {
+          const image = button.querySelector("img");
+          lightboxImage.src = image.src;
+          lightboxImage.alt = image.alt;
+          lightboxCaption.textContent = button.dataset.caption;
+          lightbox.showModal();
+        }),
+      );
+      document
+        .getElementById("lightbox-close")
+        .addEventListener("click", () => lightbox.close());
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) lightbox.close();
+      });
+      // Close the mobile menu after picking a link
+      document
+        .querySelectorAll("header nav a")
+        .forEach((a) =>
+          a.addEventListener(
+            "click",
+            () => (document.getElementById("nav-toggle").checked = false),
+          ),
+        );
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document
+        .getElementById("subscribe-form")
+        .addEventListener("submit", () => {
+          const status = document.getElementById("form-status");
+          status.textContent =
+            "Thank you. Your subscription request is being sent…";
+          status.classList.remove("hidden");
+        });
+    </script>
   </body>
 </html>
